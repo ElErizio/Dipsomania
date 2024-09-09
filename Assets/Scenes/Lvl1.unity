@@ -582,8 +582,10 @@ GameObject:
   - component: {fileID: 1225506090}
   - component: {fileID: 1225506094}
   - component: {fileID: 1225506095}
+  - component: {fileID: 1225506097}
+  - component: {fileID: 1225506096}
   m_Layer: 0
-  m_Name: Esfera
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -701,7 +703,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &1225506095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,6 +716,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57f950310d8910419e8b3e8a6b0f3bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1225506096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225506088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b468c3b9a4434524a9dbd2f4aef16a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1225506097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225506088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e39e3a48913e245803270ff81a949b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 5
+  MuerteEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1225506088}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1383687555
 GameObject:
   m_ObjectHideFlags: 0
