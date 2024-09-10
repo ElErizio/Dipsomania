@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GroundSpawner : MonoBehaviour
@@ -13,12 +14,10 @@ public class GroundSpawner : MonoBehaviour
 
     private void Start()
     {
+        nextSpawnPoint = transform.position;
         for (int i = 0; i < 5; i++)
         {
             SpawnTile();
-        }
-        
+        }    
     }
-
-   
 }
