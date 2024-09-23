@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Obstaculo : MonoBehaviour
 {
+    public float TiempoDeVida = 12f;
     public void Inicializar()
     {
         print ("Se inicializa " + gameObject.name);
@@ -12,7 +13,7 @@ public class Obstaculo : MonoBehaviour
 
     IEnumerator Suicide()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(TiempoDeVida);
         gameObject.SetActive(false);
     }
 }
