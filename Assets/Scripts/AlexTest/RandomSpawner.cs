@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class RandomSpawner : MonoBehaviour
 {
-    public List<GameObject> spwnObjs = new List<GameObject>();
+    public PoolMaster.OBJECT_TO_SPAWN objectToSpawn;
     private void Start()
     {
-        GameObject obj = spwnObjs[Random.Range(0, spwnObjs.Count - 1)];
-        Instantiate(obj,transform.position,Quaternion.identity,transform);
+        GameObject newObj = PoolMaster.GetInstance().GetObjectFromPool(objectToSpawn);
+        newObj.transform.parent = transform;
+        newObj.transform.localPosition = Vector3.zero;
+        newObj.gameObject.SetActive(true);
     }
 }
