@@ -11,7 +11,9 @@ public class ScenarioGenerator : MonoBehaviour
     public LayerMask mask;
     public int tileWith;
     public Transform groundChecker;
+    public GameObject destroyer;
     bool isGrounding;
+    bool spawn;
     Vector3 nextSpawmPoint;
 
     private void Start()
@@ -20,6 +22,7 @@ public class ScenarioGenerator : MonoBehaviour
         nextSpawmPoint = transform.position - new Vector3(0, 0, tileWith);
         print(nextSpawmPoint);
         groundChecker.position = transform.position + new Vector3(0, 0, (-tileWith / 2)+ 0.09f);
+        destroyer.transform.position = transform.position - new Vector3(0, 0, tileWith*3);
         GameManager.GetInstance().OnGameStateChanged += OnGameStateChanged;
     }
 
@@ -28,16 +31,18 @@ public class ScenarioGenerator : MonoBehaviour
         if(gameState == GAME_STATE.PLAY)
         {
             isGrounding = Physics.CheckSphere(groundChecker.position, 0.01f, mask);
-            if (!isGrounding)
+            if (!isGrounding && spawn == false)
             {
+                spawn = true;
                 SpawnTile();
             }
         }
     }
     void SpawnTile()
     {
-        GameObject newTile = Instantiate(groundTile, nextSpawmPoint, Quaternion.identity);
         nextSpawmPoint = new Vector3(0, 0, RoundToNearestMultiple(transform.position.z));
+        GameObject newTile = Instantiate(groundTile, nextSpawmPoint, Quaternion.identity);
+        spawn = false;
     }
 
     public float RoundToNearestMultiple(float number)
