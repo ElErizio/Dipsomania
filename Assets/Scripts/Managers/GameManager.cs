@@ -13,7 +13,14 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject); 
+        }
+        else
+        {
+            instance = this;
+        }
     }
     #endregion
 
@@ -56,6 +63,7 @@ public enum GAME_STATE
 {
     PLAY,
     PAUSE,
-    GAME_OVER
+    GAME_OVER,
+    MENU
 }
 

@@ -1,40 +1,51 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
 using UnityEngine.Events;
 
 public class Destruible : MonoBehaviour
 {
     public int vida;
-    int vidaOriginal;
+    private int vidaOriginal;
+
+    public GameObject gameOverPanel;
 
     public UnityEvent MuerteEvent;
+
     private void Start()
     {
         vidaOriginal = vida;
-    }
 
-    public void RecuperarVida(int masVida)
-    {
-        vida+= masVida;
-        if(vida > vidaOriginal)
+        if (gameOverPanel != null)
         {
-            vida = vidaOriginal;
+            gameOverPanel.SetActive(false);
         }
     }
-    public void RecibirDanio(int danio)
+
+    private void Update()
     {
-        vida-=danio;
-        if(vida <= 0)
+        if (vida <= 0)
         {
             Morir();
         }
     }
 
+    public void RecibirDanio(int danio)
+    {
+        vida -= danio;
+    }
+
     public void Morir()
     {
-        print("Se muere");
-        MuerteEvent.Invoke();
+        GameManager.GetInstance().ChangeGameState(GAME_STATE.GAME_OVER);
+
+        MuerteEvent?.Invoke();
+    }
+
+    public void RecuperarVida(int cantidad)
+    {
+        vida += cantidad;
+        if (vida > vidaOriginal)
+        {
+            vida = vidaOriginal;
+        }
     }
 }

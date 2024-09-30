@@ -7,7 +7,7 @@ public class Obstaculo : MonoBehaviour
     public float TiempoDeVida = 12f;
     public void Inicializar()
     {
-        print ("Se inicializa " + gameObject.name);
+        //print ("Se inicializa " + gameObject.name);
         StartCoroutine(Suicide());
     }
 

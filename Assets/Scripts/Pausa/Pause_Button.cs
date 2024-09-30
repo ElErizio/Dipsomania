@@ -1,19 +1,18 @@
 using UnityEngine;
-using UnityEngine.UI;  // Necesario para interactuar con UI
+using UnityEngine.UI; 
 
 public class PauseButton : MonoBehaviour
 {
-    public Button pauseButton;  // Referencia al botón de pausa
+    public Button pauseButton;  
 
     void Start()
     {
-        // Asegúrate de asignar la función al botón
+        
         pauseButton.onClick.AddListener(PauseGame);
     }
 
     void PauseGame()
     {
-        // Cambia el estado del juego a PAUSE cuando el botón es presionado
         GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
     }
 }
