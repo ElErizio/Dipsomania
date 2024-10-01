@@ -23,8 +23,13 @@ public class PoolMaster : MonoBehaviour
     {
         Edificio,
         Arbol,
-        Piso
+        Piso,
+        Tile
     }
+
+
+    List<GameObject> tilePool = new List<GameObject>();
+    public GameObject tilePF;
 
     List<GameObject> edificiosPool = new List<GameObject>();
     public List<GameObject> edificiosPF = new List<GameObject>();
@@ -48,6 +53,7 @@ public class PoolMaster : MonoBehaviour
             case OBJECT_TO_SPAWN.Edificio: return GetEdificioToSpawn();
             case OBJECT_TO_SPAWN.Arbol: return GetArbolToSpawn();
             case OBJECT_TO_SPAWN.Piso: return GetPisoToSpawn();
+            case OBJECT_TO_SPAWN.Tile: return GetTileToSpawn();
         }
         return null;
     }
@@ -94,5 +100,20 @@ public class PoolMaster : MonoBehaviour
         GameObject newPiso = Instantiate(pisoPF[Random.Range(0, pisoPF.Count)], new Vector3(-100, -100, -100), Quaternion.identity, transform);
         pisoPool.Add(newPiso);
         return newPiso;
+    }
+
+    public GameObject GetTileToSpawn()
+    {
+        foreach (GameObject tile in tilePool)
+        {
+            if (tile.gameObject.activeSelf == false)
+            {
+                return tile;
+            }
+        }
+
+        GameObject newTile = Instantiate(tilePF, new Vector3(-100, -100, -100), Quaternion.identity, transform);
+        tilePool.Add(newTile);
+        return newTile;
     }
 }
