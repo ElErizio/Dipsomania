@@ -5,33 +5,40 @@ public class ForwardMovement : MonoBehaviour
     bool isOnPlay;
     public float speed = 5f;
     public Vector3 direction;
+    Rigidbody rb;
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody>();
+
+        // Verifica que direction no sea (0, 0, 0)
+        if (direction == Vector3.zero)
+        {
+            direction = Vector3.forward; // Dirección predeterminada
+        }
+
         direction = direction.normalized;
+
         GameManager.GetInstance().OnGameStateChanged += OnGameStateChanged;
         OnGameStateChanged(GameManager.GetInstance().currentGameState);
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        // Si el juego está en estado de "PLAY", se ejecuta el movimiento
         if (isOnPlay)
         {
             Movement(); // Mueve el objeto si el juego está en "PLAY"
         }
-        // Si está en "PAUSE" o cualquier otro estado, no se ejecuta nada
     }
 
     private void Movement()
     {
-        // Método para activar el movimiento de los obstáculos
-        transform.Translate(direction * speed * Time.deltaTime);
+        //rb.AddForce(direction*speed, ForceMode.VelocityChange);
+        rb.velocity = direction * speed;
     }
 
     void OnGameStateChanged(GAME_STATE _gs)
     {
-        // Cambia el estado de isOnPlay dependiendo del estado del juego
         isOnPlay = _gs == GAME_STATE.PLAY;
     }
 }

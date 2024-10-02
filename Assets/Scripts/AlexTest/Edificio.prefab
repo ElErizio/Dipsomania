@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4854324935199236725}
   - component: {fileID: 5205624178247132771}
   - component: {fileID: 4161873070960586822}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Edificio
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

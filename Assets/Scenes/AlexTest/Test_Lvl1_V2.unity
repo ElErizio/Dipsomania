@@ -805,11 +805,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d405821a5728e34caa0f87743fd56ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundTile: {fileID: 2034163347787779529, guid: 6c88cfbb130449e44ac1ca4090307f88, type: 3}
+  groundTile: {fileID: 2034163347787779529, guid: a47f91245e865a64daf638c0b2df4b56, type: 3}
   mask:
     serializedVersion: 2
     m_Bits: 64
-  tileWith: 30
+  tileWith: 20
   defaultTilesCount: 10
   startPos: {x: 0, y: 0, z: 0}
   groundChecker: {fileID: 1477420406}
@@ -1116,10 +1116,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1728,7 +1728,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 112
   m_CollisionDetection: 2
 --- !u!114 &1225506095
 MonoBehaviour:
@@ -1754,6 +1754,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b468c3b9a4434524a9dbd2f4aef16a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invulnerableLMName: Invulnerable
+  invulnerableTime: 3
 --- !u!114 &1225506097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2863,7 +2865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094d48aa71832004cad7641f66022a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilePF: {fileID: 2034163347787779529, guid: 6c88cfbb130449e44ac1ca4090307f88, type: 3}
+  tilePF: {fileID: 2034163347787779529, guid: a47f91245e865a64daf638c0b2df4b56, type: 3}
   edificiosPF:
   - {fileID: 2031860850088508549, guid: 7a330c673f5b9854f940d1a631851c37, type: 3}
   - {fileID: 2031860850088508549, guid: b23cf175cb2cad747b0193d470b070bc, type: 3}
@@ -2930,7 +2932,6 @@ GameObject:
   - component: {fileID: 2089137270}
   - component: {fileID: 2089137273}
   - component: {fileID: 2089137272}
-  - component: {fileID: 2089137271}
   m_Layer: 0
   m_Name: ScenarioDestroyer
   m_TagString: Untagged
@@ -2953,33 +2954,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 593686419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2089137271
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089137269}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &2089137272
 BoxCollider:
   m_ObjectHideFlags: 0
