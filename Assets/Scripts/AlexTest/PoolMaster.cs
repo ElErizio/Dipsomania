@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PoolMaster : MonoBehaviour
@@ -24,7 +25,8 @@ public class PoolMaster : MonoBehaviour
         Edificio,
         Arbol,
         Piso,
-        Tile
+        Tile,
+        Carro
     }
 
 
@@ -40,6 +42,9 @@ public class PoolMaster : MonoBehaviour
     List<GameObject> pisoPool = new List<GameObject>();
     public List<GameObject> pisoPF = new List<GameObject>();
 
+    List<GameObject> carroPool = new List<GameObject>();
+    public List<GameObject> carroPF = new List<GameObject>();
+
 
     private void Start()
     {
@@ -54,6 +59,7 @@ public class PoolMaster : MonoBehaviour
             case OBJECT_TO_SPAWN.Arbol: return GetArbolToSpawn();
             case OBJECT_TO_SPAWN.Piso: return GetPisoToSpawn();
             case OBJECT_TO_SPAWN.Tile: return GetTileToSpawn();
+            case OBJECT_TO_SPAWN.Carro: return GetCarroToSpawn();
         }
         return null;
     }
@@ -115,5 +121,20 @@ public class PoolMaster : MonoBehaviour
         GameObject newTile = Instantiate(tilePF, new Vector3(-100, -100, -100), Quaternion.identity, transform);
         tilePool.Add(newTile);
         return newTile;
+    }
+
+    public GameObject GetCarroToSpawn()
+    {
+        foreach (GameObject carro in carroPool)
+        {
+            if (carro.gameObject.activeSelf == false)
+            {
+                return carro;
+            }
+        }
+
+        GameObject newCarro = Instantiate(carroPF[Random.Range(0, carroPF.Count)], new Vector3(-100, -100, -100), Quaternion.identity, transform);
+        carroPool.Add(newCarro);
+        return newCarro;
     }
 }

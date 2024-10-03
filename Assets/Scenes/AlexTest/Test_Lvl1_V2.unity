@@ -2875,6 +2875,8 @@ MonoBehaviour:
   - {fileID: 1109553216344070757, guid: 4967ea4f0ffa63f4886e95d724ba7ed8, type: 3}
   pisoPF:
   - {fileID: 6809223376950153558, guid: fa296b4494fd79b4e8dccbf72177e6a4, type: 3}
+  carroPF:
+  - {fileID: 1109553216344070757, guid: acce5878eddfc0846aca8693d60e839f, type: 3}
 --- !u!4 &2044102705
 Transform:
   m_ObjectHideFlags: 0

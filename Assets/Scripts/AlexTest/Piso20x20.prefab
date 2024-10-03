@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &82887654661217963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4509689065061951309}
+  - component: {fileID: 9193644770165435}
+  m_Layer: 6
+  m_Name: CarroSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4509689065061951309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82887654661217963}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.5, y: 0.5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7548644612698271379}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9193644770165435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82887654661217963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5094ae8db82cc0b439b7d3f5fedb5d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: 4
+  spawnPercentage: 20
 --- !u!1 &289742354758505663
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,7 +59,7 @@ GameObject:
   m_Layer: 6
   m_Name: PisoSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -45,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 2
+  spawnPercentage: 100
 --- !u!1 &789525352829167165
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,7 +105,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (14)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -90,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 100
 --- !u!1 &1135990214387991238
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +151,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (9)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -135,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &1453692407287878988
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +197,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -180,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &1907576879877136673
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +243,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (7)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -225,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &2034163347787779529
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +327,8 @@ Transform:
   - {fileID: 121644473123610319}
   - {fileID: 7426898519237261236}
   - {fileID: 3412449046422863415}
+  - {fileID: 4509689065061951309}
+  - {fileID: 1352423380490249786}
   - {fileID: 208605057605850530}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -325,7 +378,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (8)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -357,6 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &2342750030642800383
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +424,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -402,6 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &2655518660893378022
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +470,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -447,6 +502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &2700019259677674192
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,7 +516,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (12)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -492,6 +548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 100
 --- !u!1 &2892405059417545406
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +562,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (18)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -537,6 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 100
 --- !u!1 &3759869184131152330
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +608,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (15)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -582,6 +640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 100
 --- !u!1 &3838421981358057759
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,7 +654,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (16)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -627,6 +686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 100
 --- !u!1 &3887368961111677092
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +700,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -672,6 +732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &4034138115604061249
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,7 +746,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (17)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -717,6 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 100
 --- !u!1 &5162907956153986033
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,7 +792,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (10)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -762,6 +824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 100
 --- !u!1 &5471072597261940904
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,7 +838,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -807,6 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &6261848032109515169
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,7 +884,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (11)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -852,6 +916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 100
 --- !u!1 &7011764935781520141
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,7 +930,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (13)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -897,6 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 100
 --- !u!1 &7099131104893563297
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,7 +976,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (6)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -942,6 +1008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &7300507400123634855
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,7 +1022,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -987,6 +1054,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
+--- !u!1 &8706631497977763429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1352423380490249786}
+  - component: {fileID: 8492096883150835711}
+  m_Layer: 6
+  m_Name: CarroSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1352423380490249786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8706631497977763429}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 0.5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7548644612698271379}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8492096883150835711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8706631497977763429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5094ae8db82cc0b439b7d3f5fedb5d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: 4
+  spawnPercentage: 20
 --- !u!1 &8833792864227498111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1114,7 @@ GameObject:
   m_Layer: 6
   m_Name: EdificioSpwner (19)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1032,3 +1146,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 100

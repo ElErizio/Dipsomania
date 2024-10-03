@@ -5,6 +5,9 @@ using UnityEngine;
 public class RandomSpawner : MonoBehaviour
 {
     public PoolMaster.OBJECT_TO_SPAWN objectToSpawn;
+
+    [Range(0, 100)]
+    public int spawnPercentage = 100;
     private void Start()
     {
         Spawn();
@@ -12,9 +15,12 @@ public class RandomSpawner : MonoBehaviour
 
     public void Spawn()
     {
-        GameObject newObj = PoolMaster.GetInstance().GetObjectFromPool(objectToSpawn);
-        newObj.transform.parent = transform;
-        newObj.transform.localPosition = Vector3.zero;
-        newObj.gameObject.SetActive(true);
+        int random = Random.Range(0, 100);
+        if (random <= spawnPercentage) {
+            GameObject newObj = PoolMaster.GetInstance().GetObjectFromPool(objectToSpawn);
+            newObj.transform.parent = transform;
+            newObj.transform.localPosition = Vector3.zero;
+            newObj.gameObject.SetActive(true);
+        }
     }
 }
