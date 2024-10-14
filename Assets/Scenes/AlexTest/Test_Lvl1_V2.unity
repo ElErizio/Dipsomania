@@ -2086,23 +2086,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeRemaining: 60
   timerText: {fileID: 1260343256}
---- !u!1 &1624585581 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4665701641739570806, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
-  m_PrefabInstance: {fileID: 2083891347}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1624585590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624585581}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5cd1b88ee9ee04dbd4027ace0d4004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1903214151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,17 +2461,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4326855004388327930, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 1013006867569979, guid: 9f87d367baf01df4e90aa1b69ed3b82d, type: 3}
     - target: {fileID: 4665701641739570806, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4665701641739570806, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4818983686308893936, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: gameOverPanel
@@ -2498,17 +2473,10 @@ PrefabInstance:
       propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 70684224}
-    - target: {fileID: 7353290982081978905, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4665701641739570806, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 1624585590}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

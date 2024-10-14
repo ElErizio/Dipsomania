@@ -58,12 +58,24 @@ public class Player : MonoBehaviour
     IEnumerator Invulnerabilidad()
     {
         isInvulnerable = true;
+        StartCoroutine(InvulnerabilidadAnim());
         yield return new WaitForSeconds(0.1f);
         gameObject.layer = LayerMask.NameToLayer(invulnerableLMName);
         yield return new WaitForSeconds(invulnerableTime);
         gameObject.layer = defaultLM;
         isInvulnerable = false;
+    }
 
-
+    IEnumerator InvulnerabilidadAnim()
+    {
+        MeshRenderer mesh = GetComponent<MeshRenderer>();
+        mesh.enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        mesh.enabled = true;
+        yield return new WaitForSeconds(0.2f);
+        if (isInvulnerable)
+        {
+            StartCoroutine(InvulnerabilidadAnim());
+        }
     }
 }

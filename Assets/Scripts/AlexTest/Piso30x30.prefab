@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 2
+  spawnPercentage: 100
 --- !u!1 &789525352829167165
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 50
 --- !u!1 &1135990214387991238
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &1453692407287878988
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &1907576879877136673
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &2034163347787779529
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &2342750030642800383
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &2655518660893378022
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &2700019259677674192
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 50
 --- !u!1 &2892405059417545406
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,6 +546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 50
 --- !u!1 &3759869184131152330
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 50
 --- !u!1 &3838421981358057759
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,6 +638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 50
 --- !u!1 &3887368961111677092
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,6 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &4034138115604061249
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 50
 --- !u!1 &5162907956153986033
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 50
 --- !u!1 &5471072597261940904
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &6261848032109515169
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,6 +868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 50
 --- !u!1 &7011764935781520141
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 50
 --- !u!1 &7099131104893563297
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &7300507400123634855
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,6 +1006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 0
+  spawnPercentage: 100
 --- !u!1 &8833792864227498111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,3 +1052,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: 1
+  spawnPercentage: 50

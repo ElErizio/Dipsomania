@@ -79,17 +79,16 @@ GameObject:
   - component: {fileID: 5174594938205305236}
   - component: {fileID: 4652183387125777950}
   - component: {fileID: 5924691373104920291}
-  - component: {fileID: 7353290982081978905}
   - component: {fileID: 4818983686308893936}
   - component: {fileID: 8595872470214908962}
-  - component: {fileID: 4672569571878088251}
+  - component: {fileID: 4030028154665563391}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3294424286155709870
 Transform:
   m_ObjectHideFlags: 0
@@ -113,7 +112,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4665701641739570806}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 1013006867569979, guid: 9f87d367baf01df4e90aa1b69ed3b82d, type: 3}
 --- !u!23 &5174594938205305236
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -204,18 +203,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 2
---- !u!114 &7353290982081978905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4665701641739570806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a57f950310d8910419e8b3e8a6b0f3bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4818983686308893936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invulnerableLMName: Invulnerable
   invulnerableTime: 3
---- !u!114 &4672569571878088251
+--- !u!114 &4030028154665563391
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,11 +255,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4665701641739570806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03b476d4c59474649a7235db6f263ef7, type: 3}
+  m_Script: {fileID: 11500000, guid: cdc2c99e23905644eb27bd93aa291d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  direction: {x: 0, y: 0, z: 1}
+  forwardSpeed: 6
+  tiltSensitivity: 4
 --- !u!1 &5952902383565843024
 GameObject:
   m_ObjectHideFlags: 0
