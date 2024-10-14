@@ -1,11 +1,17 @@
 using UnityEngine;
-using TMPro; 
+using TMPro;
 
 public class Timer : MonoBehaviour
 {
     public float timeRemaining = 60f; // 1 minuto (60 segundos)
-    public TextMeshProUGUI timerText; 
+    public TextMeshProUGUI timerText;
     private bool isGamePaused = false;
+
+    void Start()
+    {
+        // Suscribir al evento de cambio de estado
+        GameManager.GetInstance().OnGameStateChanged += OnGameStateChanged;
+    }
 
     void Update()
     {
@@ -20,7 +26,7 @@ public class Timer : MonoBehaviour
                 timerText.color = Color.red;
             }
 
-            // Actualizar UI (si estás usando una)
+            // Actualizar UI
             if (timerText != null)
             {
                 timerText.text = Mathf.Round(timeRemaining).ToString();
@@ -29,8 +35,21 @@ public class Timer : MonoBehaviour
             // Verificar si el tiempo ha llegado a 0
             if (timeRemaining <= 0)
             {
-                PauseGame();
+                PauseGame(); // Pausar el juego cuando llegue a 0
             }
+        }
+    }
+
+    // Método que se llama cuando cambia el estado del juego
+    void OnGameStateChanged(GAME_STATE newState)
+    {
+        if (newState == GAME_STATE.PAUSE)
+        {
+            isGamePaused = true; // Pausa el timer
+        }
+        else if (newState == GAME_STATE.PLAY)
+        {
+            isGamePaused = false; // Reanuda el timer
         }
     }
 
@@ -39,5 +58,15 @@ public class Timer : MonoBehaviour
         isGamePaused = true;
         Time.timeScale = 0; // Pausa el juego
         Debug.Log("El juego se ha pausado.");
+        GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE); // Cambiar el estado a PAUSE
+    }
+
+    private void OnDestroy()
+    {
+        // Desuscribirse del evento cuando este objeto sea destruido
+        if (GameManager.GetInstance() != null)
+        {
+            GameManager.GetInstance().OnGameStateChanged -= OnGameStateChanged;
+        }
     }
 }

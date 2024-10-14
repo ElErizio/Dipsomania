@@ -10,17 +10,27 @@ public class Spawn : MonoBehaviour
     public Vector3 spawnPosMax;
     public float spawnRate;
     float timeSinceLastSpawn;
-    
+    private bool isGamePaused = false; // Bandera para verificar si el juego está en pausa
+
+    void Start()
+    {
+        // Suscribirse al evento de cambio de estado del GameManager
+        GameManager.GetInstance().OnGameStateChanged += OnGameStateChanged;
+    }
+
     void Update()
     {
-        if(timeSinceLastSpawn > 0)
+        if (!isGamePaused) // Solo actualizar si el juego no está en pausa
         {
-            timeSinceLastSpawn-=Time.deltaTime;
-        }
-        else
-        {
-            timeSinceLastSpawn = spawnRate;
-            SpawnObstacle();
+            if (timeSinceLastSpawn > 0)
+            {
+                timeSinceLastSpawn -= Time.deltaTime;
+            }
+            else
+            {
+                timeSinceLastSpawn = spawnRate;
+                SpawnObstacle();
+            }
         }
     }
 
@@ -36,7 +46,7 @@ public class Spawn : MonoBehaviour
     {
         foreach (Obstaculo obstaculo in obstaculos)
         {
-            if(obstaculo.gameObject.activeSelf == false)
+            if (obstaculo.gameObject.activeSelf == false)
             {
                 return obstaculo;
             }
@@ -50,5 +60,27 @@ public class Spawn : MonoBehaviour
     Vector3 GetRandomSpawnPos()
     {
         return new Vector3(Random.Range(spawnPosMin.x, spawnPosMax.x), Random.Range(spawnPosMin.y, spawnPosMax.y), Random.Range(spawnPosMin.z, spawnPosMax.z));
+    }
+
+    // Método que se ejecuta cuando cambia el estado del juego
+    void OnGameStateChanged(GAME_STATE newState)
+    {
+        if (newState == GAME_STATE.PAUSE)
+        {
+            isGamePaused = true; // Pausar la generación de obstáculos
+        }
+        else if (newState == GAME_STATE.PLAY)
+        {
+            isGamePaused = false; // Reanudar la generación de obstáculos
+        }
+    }
+
+    private void OnDestroy()
+    {
+        // Desuscribirse del evento cuando este objeto sea destruido
+        if (GameManager.GetInstance() != null)
+        {
+            GameManager.GetInstance().OnGameStateChanged -= OnGameStateChanged;
+        }
     }
 }
