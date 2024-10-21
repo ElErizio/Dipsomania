@@ -1630,6 +1630,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiDocumentObject: {fileID: 761010294}
+  totalGroundTiles: 30
+  tilesToIgnore: 5
 --- !u!1 &1225506088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,7 +2212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cf99f4472f0d540bd5bc199806f65e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PFObstaculo: {fileID: 8673517165830030407, guid: ba3c71d6213976d418b0fc77a933c169, type: 3}
+  PFObstaculo: {fileID: 8673517165830030407, guid: a4154d060166a74409e8f4c05e58b862, type: 3}
   spawnPosMin: {x: 4, y: 0, z: 45}
   spawnPosMax: {x: -4, y: 0, z: 45}
   spawnRate: 1
