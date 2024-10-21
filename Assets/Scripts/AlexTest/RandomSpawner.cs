@@ -10,7 +10,7 @@ public class RandomSpawner : MonoBehaviour
     public int spawnPercentage = 100;
     private void Start()
     {
-        Spawn();
+        //Spawn();
     }
 
     public void Spawn()
@@ -20,6 +20,7 @@ public class RandomSpawner : MonoBehaviour
             GameObject newObj = PoolMaster.GetInstance().GetObjectFromPool(objectToSpawn);
             newObj.transform.parent = transform;
             newObj.transform.localPosition = Vector3.zero;
+            newObj.transform.localRotation = Quaternion.identity;
             newObj.gameObject.SetActive(true);
         }
     }

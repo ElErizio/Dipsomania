@@ -2357,9 +2357,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilePF: {fileID: 2034163347787779529, guid: a47f91245e865a64daf638c0b2df4b56, type: 3}
   edificiosPF:
-  - {fileID: 2031860850088508549, guid: 7a330c673f5b9854f940d1a631851c37, type: 3}
-  - {fileID: 2031860850088508549, guid: b23cf175cb2cad747b0193d470b070bc, type: 3}
-  - {fileID: 2031860850088508549, guid: a56a227827eb87345b1dbb8c66df4b13, type: 3}
+  - {fileID: 8995749050477324687, guid: cd09d1e3cc8fe8f40b4b9527604aacc1, type: 3}
+  - {fileID: 9033366826363162460, guid: 24c0b97f272c67147a6285c36d248277, type: 3}
+  - {fileID: 1845081372096584723, guid: 3ce19da1a76613044ac17e9541187694, type: 3}
   arbolPF:
   - {fileID: 5979566503791241944, guid: 9cf0b86ae0a0982469c7fbbd5592c28b, type: 3}
   - {fileID: 1109553216344070757, guid: 4967ea4f0ffa63f4886e95d724ba7ed8, type: 3}
