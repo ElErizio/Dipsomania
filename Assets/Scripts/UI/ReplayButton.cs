@@ -5,6 +5,6 @@ public class ReplayButton : MonoBehaviour
 {
     public void ReplayGame()
     {
-        SceneManager.LoadScene("Test_Lvl1_V2");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
