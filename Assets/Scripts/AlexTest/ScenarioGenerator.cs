@@ -15,7 +15,7 @@ public class ScenarioGenerator : MonoBehaviour
     public Transform groundChecker;
     public GameObject destroyer;
     bool isGrounding;
-    bool startSpawning,spawn;
+    bool startSpawning, spawn;
     Vector3 nextSpawmPoint;
 
     private void Start()
@@ -34,7 +34,7 @@ public class ScenarioGenerator : MonoBehaviour
 
     private void SpawnDefault()
     {
-        for (int i = 0; i < defaultTilesCount-1; i++)
+        for (int i = 0; i < defaultTilesCount - 1; i++)
         {
             SpawnTile();
             transform.localPosition += new Vector3(0, 0, tileWith);
@@ -44,7 +44,7 @@ public class ScenarioGenerator : MonoBehaviour
 
     private void Update()
     {
-        if(gameState == GAME_STATE.PLAY && startSpawning)
+        if (gameState == GAME_STATE.PLAY && startSpawning)
         {
             isGrounding = Physics.CheckSphere(groundChecker.position, 0.01f, mask);
             if (!isGrounding && spawn == false)

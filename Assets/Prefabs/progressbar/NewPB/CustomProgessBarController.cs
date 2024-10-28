@@ -3,9 +3,10 @@ using UnityEngine.UIElements;
 
 public class CustomProgressBarController : MonoBehaviour
 {
-    public UIDocument uiDocument; // Arrastra el UIDocument aquí en el Inspector
+    public UIDocument uiDocument;
     private VisualElement progressBarFill;
-    private float currentProgress = 0f; // Valor actual del progreso
+    private float currentProgress = 0f;
+    private bool hasWon = false; // Variable para verificar si ya se alcanzó el 100% de progreso
 
     private void Start()
     {
@@ -18,34 +19,42 @@ public class CustomProgressBarController : MonoBehaviour
         }
         else
         {
-            UpdateProgress(0f); // Inicializa el progreso en 0%
+            UpdateProgress(0f);
         }
     }
 
     private void Update()
     {
-        // Llenado progresivo automático (ajusta la velocidad cambiando 10f)
         if (currentProgress < 100f)
         {
-            currentProgress += 10f * Time.deltaTime; // Incremento continuo
+            currentProgress += 10f * Time.deltaTime;
             UpdateProgress(currentProgress);
         }
 
-        // Prueba de reset al presionar la barra espaciadora
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            currentProgress = 0f; // Reinicia el progreso al 0%
+            currentProgress = 0f;
             UpdateProgress(currentProgress);
+            hasWon = false; // Reiniciar el estado de victoria al resetear
         }
     }
 
-    // Método para actualizar el progreso (entre 0 y 100)
     public void UpdateProgress(float percentage)
     {
         if (progressBarFill != null)
         {
-            // Ajusta la altura en porcentaje para un relleno vertical
-            progressBarFill.style.height = new Length(percentage, LengthUnit.Percent);
+            float translateY = 100 - percentage;
+            progressBarFill.style.translate = new StyleTranslate(new Translate(0, Length.Percent(translateY), 0));
+
+            // Verificar si el progreso ha alcanzado o superado el 100%
+            if (percentage >= 100f && !hasWon)
+            {
+                Debug.Log("¡Ganaste!");
+                hasWon = true; // Marcar que ya se alcanzó el 100% de progreso
+
+                // Cambiar el estado del juego a PAUSE
+                GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
+            }
         }
     }
 }
