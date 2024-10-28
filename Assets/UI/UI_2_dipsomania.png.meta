@@ -1,0 +1,799 @@
+fileFormatVersion: 2
+guid: 10b1f15994f6c6741b852e48bc42b7fd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_2_dipsomania_2
+      rect:
+        serializedVersion: 2
+        x: 3688
+        y: 6437
+        width: 1684
+        height: 703
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1286cf7dc55a2fe43b0fec8067c34e95
+      internalID: -1852989120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 6437
+        width: 1666
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19949f29c12a61646ad228ba6be9865a
+      internalID: 1877775833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_5
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 6430
+        width: 1670
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b017f0a289d4646b038526a9ee7fbb
+      internalID: -438932945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_15
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 5660
+        width: 1687
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe8bd43a9c10cd45bf8848dba410842
+      internalID: 1482761672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_16
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 5680
+        width: 1652
+        height: 673
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a8eedaaa6c01347bcee67e9c56f348
+      internalID: -1196103032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_18
+      rect:
+        serializedVersion: 2
+        x: 3688
+        y: 5646
+        width: 1673
+        height: 707
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b481d5b8f79bb549ba1aafdcfbc0925
+      internalID: 382079200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_34
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 4989
+        width: 1371
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5047c4de81a900f4ca402a215006f4f3
+      internalID: 1337906320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_37
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 4999
+        width: 1341
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 1, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7ee22687b15954eb970d4453f31a84
+      internalID: 144688152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_38
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 4999
+        width: 1355
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad0713897fc9bc478422ebc9b238da8
+      internalID: -1144960758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_46
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 4395
+        width: 1378
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372e6d1b015b09d43ac4256d504effd9
+      internalID: -547392419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_47
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 4398
+        width: 1361
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7a5b0ab97785043b72959988bb5f26
+      internalID: -1439761076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_48
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 4398
+        width: 1344
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9b66a22955ed041b22254e3dd00b24
+      internalID: -108553735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_56
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 3161
+        width: 2886
+        height: 1118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab1beb3d6ee0304b8b346cdf74a9b4d
+      internalID: 436729155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_58
+      rect:
+        serializedVersion: 2
+        x: 3959
+        y: 2436
+        width: 1358
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32301d7968870344caceb3ae1e9716b4
+      internalID: 1989985548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_62
+      rect:
+        serializedVersion: 2
+        x: 3962
+        y: 1758
+        width: 1378
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc19aa7ba4b1d54ba74c5ba8b596f3e
+      internalID: -1684027935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_63
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1565
+        width: 1104
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21317151b293f444383148632f1afa32
+      internalID: 586208644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_66
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1790
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c42699f17b20a4ea750f56cc749dfb
+      internalID: -315886229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_67
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 900
+        width: 2106
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44bc4a95ad2bf8429257f78604c2514
+      internalID: -2075697261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_74
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1171
+        width: 383
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badf6e32f44c7be4387eb75336c0445d
+      internalID: 399292132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_83
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 746
+        width: 383
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57949d130953f6c48a2b98e8354ac9fe
+      internalID: -569098158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_85
+      rect:
+        serializedVersion: 2
+        x: 2962
+        y: 881
+        width: 1429
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0470836d63cb57f448c7cb9d68baca19
+      internalID: 396645044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_100
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 123
+        width: 1695
+        height: 703
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4340c3b0e8ec88548a550b98d1bde1e0
+      internalID: -1419120865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_101
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 151
+        width: 1687
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af267d223d18484b8f65dfd846e7201
+      internalID: -2121709190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_103
+      rect:
+        serializedVersion: 2
+        x: 4511
+        y: 451
+        width: 360
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff721024578764d4eb3575de40f47769
+      internalID: -911552716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_105
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 313
+        width: 365
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92868afb205c03d4abf4ab6104b9e9b0
+      internalID: 355562653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2_dipsomania_0
+      rect:
+        serializedVersion: 2
+        x: 4561
+        y: 801
+        width: 424
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b5de650a770b149b99034819a02bf3
+      internalID: 1606188664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 31caecbfcb2aa3e4fa03614627d89189
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UI_2_dipsomania_0: 1606188664
+      UI_2_dipsomania_1: -869547522
+      UI_2_dipsomania_10: -840094301
+      UI_2_dipsomania_100: -1419120865
+      UI_2_dipsomania_101: -2121709190
+      UI_2_dipsomania_102: -693740567
+      UI_2_dipsomania_103: -911552716
+      UI_2_dipsomania_104: 2034855123
+      UI_2_dipsomania_105: 355562653
+      UI_2_dipsomania_106: -1668433709
+      UI_2_dipsomania_107: 1665225596
+      UI_2_dipsomania_108: -1634346160
+      UI_2_dipsomania_109: 923025778
+      UI_2_dipsomania_11: 759702920
+      UI_2_dipsomania_110: -1368250193
+      UI_2_dipsomania_111: -188561684
+      UI_2_dipsomania_112: -78657914
+      UI_2_dipsomania_12: 955520516
+      UI_2_dipsomania_13: 61305142
+      UI_2_dipsomania_14: -883400472
+      UI_2_dipsomania_15: 1482761672
+      UI_2_dipsomania_16: -1196103032
+      UI_2_dipsomania_17: -1930910034
+      UI_2_dipsomania_18: 382079200
+      UI_2_dipsomania_19: -19529835
+      UI_2_dipsomania_2: -1852989120
+      UI_2_dipsomania_20: 1154042365
+      UI_2_dipsomania_21: -563016276
+      UI_2_dipsomania_22: 1484221461
+      UI_2_dipsomania_23: -759755268
+      UI_2_dipsomania_24: 379396800
+      UI_2_dipsomania_25: -1507140044
+      UI_2_dipsomania_26: 905128524
+      UI_2_dipsomania_27: 486480621
+      UI_2_dipsomania_28: 1560773358
+      UI_2_dipsomania_29: -1372335597
+      UI_2_dipsomania_3: 1877775833
+      UI_2_dipsomania_30: -1276596338
+      UI_2_dipsomania_31: 1043067509
+      UI_2_dipsomania_32: -212688558
+      UI_2_dipsomania_33: -2112136403
+      UI_2_dipsomania_34: 1337906320
+      UI_2_dipsomania_35: -332358663
+      UI_2_dipsomania_36: -1448903317
+      UI_2_dipsomania_37: 144688152
+      UI_2_dipsomania_38: -1144960758
+      UI_2_dipsomania_39: -670362993
+      UI_2_dipsomania_4: 769828367
+      UI_2_dipsomania_40: 1384577605
+      UI_2_dipsomania_41: 1322826152
+      UI_2_dipsomania_42: -1401712925
+      UI_2_dipsomania_43: -1354211361
+      UI_2_dipsomania_44: 82516180
+      UI_2_dipsomania_45: 108023884
+      UI_2_dipsomania_46: -547392419
+      UI_2_dipsomania_47: -1439761076
+      UI_2_dipsomania_48: -108553735
+      UI_2_dipsomania_49: -831546806
+      UI_2_dipsomania_5: -438932945
+      UI_2_dipsomania_50: 1425448510
+      UI_2_dipsomania_51: -1940859507
+      UI_2_dipsomania_52: 388201510
+      UI_2_dipsomania_53: 255493901
+      UI_2_dipsomania_54: 1095253284
+      UI_2_dipsomania_55: 880026648
+      UI_2_dipsomania_56: 436729155
+      UI_2_dipsomania_57: -1400727633
+      UI_2_dipsomania_58: 1989985548
+      UI_2_dipsomania_59: 1508547707
+      UI_2_dipsomania_6: 1560129422
+      UI_2_dipsomania_60: 1505638820
+      UI_2_dipsomania_61: 1447925094
+      UI_2_dipsomania_62: -1684027935
+      UI_2_dipsomania_63: 586208644
+      UI_2_dipsomania_64: -489447510
+      UI_2_dipsomania_65: -1587063370
+      UI_2_dipsomania_66: -315886229
+      UI_2_dipsomania_67: -2075697261
+      UI_2_dipsomania_68: 1848731186
+      UI_2_dipsomania_69: 126236408
+      UI_2_dipsomania_7: -1924215602
+      UI_2_dipsomania_70: -636963567
+      UI_2_dipsomania_71: -1367602552
+      UI_2_dipsomania_72: 1031277401
+      UI_2_dipsomania_73: -662533988
+      UI_2_dipsomania_74: 399292132
+      UI_2_dipsomania_75: 767776285
+      UI_2_dipsomania_76: -1536824584
+      UI_2_dipsomania_77: -2091297090
+      UI_2_dipsomania_78: 1780866942
+      UI_2_dipsomania_79: 1743990862
+      UI_2_dipsomania_8: 2104379007
+      UI_2_dipsomania_80: -1622102529
+      UI_2_dipsomania_81: 987931991
+      UI_2_dipsomania_82: -1871545265
+      UI_2_dipsomania_83: -569098158
+      UI_2_dipsomania_84: 1126297520
+      UI_2_dipsomania_85: 396645044
+      UI_2_dipsomania_86: 634527644
+      UI_2_dipsomania_87: 1823674334
+      UI_2_dipsomania_88: 1774116788
+      UI_2_dipsomania_89: 241037118
+      UI_2_dipsomania_9: 890357861
+      UI_2_dipsomania_90: 954647168
+      UI_2_dipsomania_91: 1774377416
+      UI_2_dipsomania_92: 1672222450
+      UI_2_dipsomania_93: -747863719
+      UI_2_dipsomania_94: 1039664308
+      UI_2_dipsomania_95: 1980277282
+      UI_2_dipsomania_96: 140244047
+      UI_2_dipsomania_97: 378953348
+      UI_2_dipsomania_98: 598035260
+      UI_2_dipsomania_99: 105302497
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
