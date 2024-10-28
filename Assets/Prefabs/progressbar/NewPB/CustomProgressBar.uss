@@ -1,21 +1,22 @@
-/* Estilo para la base de la barra de progreso */
 .progress-bar {
-    width: 30px; /* Ancho para una barra vertical */
-    height: 300px; /* Altura de la barra */
-    background-image: url("Medidor_Velocidad.png"); /* Ruta de tu sprite de fondo */
-    background-size: cover; /* Asegura que la imagen cubra todo el elemento */
+    width: 30px;
+    height: 300px;
+    background-image: url("Medidor_Velocidad.png");
+    background-size: cover;
     position: absolute;
-    top: 40px; /* Ajusta según la posición deseada en pantalla */
+    top: 50px;
     left: 50px;
+    border: 2px solid black;
+    overflow: hidden; /* Oculta el relleno fuera de los límites */
 }
 
-/* Estilo para el relleno de la barra de progreso */
 .progress-fill {
-    width: 100%; /* Llenará todo el ancho de la base */
-    background-image: url("Barra_Velocidad.png"); /* Ruta de tu sprite de relleno */
-    background-size: cover; /* Asegura que la imagen cubra todo el elemento */
-    height: 0%; /* Comienza vacío para llenarse de abajo hacia arriba */
+    width: 100%;
+    height: 100%;
+    background-image: url("Barra_Velocidad.png");
+    background-size: cover;
     position: absolute;
-    bottom: 0; /* Comienza el relleno desde la parte inferior */
+    bottom: 0;
     left: 0;
+    transform-origin: bottom; /* Fija el origen al fondo para un mejor efecto de translate */
 }

@@ -19,12 +19,12 @@ public class Tile : MonoBehaviour
 
     public void Inicializar()
     {
-        if(mySpawners.Count == 0)
+        if (mySpawners.Count == 0)
         {
             GetChildSpawner();
         }
 
-        foreach(RandomSpawner spawner in mySpawners)
+        foreach (RandomSpawner spawner in mySpawners)
         {
             spawner.Spawn();
         }
