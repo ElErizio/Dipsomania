@@ -7,6 +7,7 @@ public class CustomProgressBarController : MonoBehaviour
     private VisualElement progressBarFill;
     private float currentProgress = 0f;
     private bool hasWon = false; // Variable para verificar si ya se alcanzó el 100% de progreso
+    private int totalTilesForProgress = 30; // Número de tiles que representan el 100% de la barra
 
     private void Start()
     {
@@ -23,19 +24,23 @@ public class CustomProgressBarController : MonoBehaviour
         }
     }
 
-    private void Update()
+    // Método que incrementa el progreso al ser llamado
+    public void IncrementProgress()
     {
-        if (currentProgress < 100f)
+        if (!hasWon) // Solo actualizar si no hemos ganado aún
         {
-            currentProgress += 10f * Time.deltaTime;
+            currentProgress += 100f / totalTilesForProgress; // Incrementa el progreso según el total de tiles
             UpdateProgress(currentProgress);
-        }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            currentProgress = 0f;
-            UpdateProgress(currentProgress);
-            hasWon = false; // Reiniciar el estado de victoria al resetear
+            // Verificar si el progreso ha alcanzado o superado el 100%
+            if (currentProgress >= 100f)
+            {
+                Debug.Log("¡Ganaste!");
+                hasWon = true; // Marcar que ya se alcanzó el 100% de progreso
+
+                // Cambiar el estado del juego a PAUSE
+                GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
+            }
         }
     }
 
@@ -45,16 +50,6 @@ public class CustomProgressBarController : MonoBehaviour
         {
             float translateY = 100 - percentage;
             progressBarFill.style.translate = new StyleTranslate(new Translate(0, Length.Percent(translateY), 0));
-
-            // Verificar si el progreso ha alcanzado o superado el 100%
-            if (percentage >= 100f && !hasWon)
-            {
-                Debug.Log("¡Ganaste!");
-                hasWon = true; // Marcar que ya se alcanzó el 100% de progreso
-
-                // Cambiar el estado del juego a PAUSE
-                GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
-            }
         }
     }
 }
