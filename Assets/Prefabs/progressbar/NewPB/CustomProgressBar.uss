@@ -6,8 +6,7 @@
     position: absolute;
     top: 50px;
     left: 50px;
-    border: 2px solid black;
-    overflow: hidden; /* Oculta el relleno fuera de los límites */
+    overflow: hidden;
 }
 
 .progress-fill {
@@ -18,5 +17,5 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    transform-origin: bottom; /* Fija el origen al fondo para un mejor efecto de translate */
+    transform-origin: bottom;
 }

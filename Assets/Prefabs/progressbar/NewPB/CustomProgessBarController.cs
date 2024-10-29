@@ -6,8 +6,8 @@ public class CustomProgressBarController : MonoBehaviour
     public UIDocument uiDocument;
     private VisualElement progressBarFill;
     private float currentProgress = 0f;
-    private bool hasWon = false; // Variable para verificar si ya se alcanzó el 100% de progreso
-    private int totalTilesForProgress = 30; // Número de tiles que representan el 100% de la barra
+    private bool hasWon = false; 
+    private int totalTilesForProgress = 30; 
 
     private void Start()
     {
@@ -24,21 +24,18 @@ public class CustomProgressBarController : MonoBehaviour
         }
     }
 
-    // Método que incrementa el progreso al ser llamado
     public void IncrementProgress()
     {
-        if (!hasWon) // Solo actualizar si no hemos ganado aún
+        if (!hasWon) 
         {
-            currentProgress += 100f / totalTilesForProgress; // Incrementa el progreso según el total de tiles
+            currentProgress += 100f / totalTilesForProgress; 
             UpdateProgress(currentProgress);
 
-            // Verificar si el progreso ha alcanzado o superado el 100%
             if (currentProgress >= 100f)
             {
                 Debug.Log("¡Ganaste!");
-                hasWon = true; // Marcar que ya se alcanzó el 100% de progreso
+                hasWon = true; 
 
-                // Cambiar el estado del juego a PAUSE
                 GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
             }
         }

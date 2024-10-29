@@ -66,9 +66,18 @@ public class ScenarioGenerator : MonoBehaviour
         spawn = false;
     }
 
+    void SpawnFinalTile()
+    {
+        GameObject newTile = Instantiate(groundTile, nextSpawmPoint, Quaternion.identity);
+        newTile.transform.parent = null;
+        newTile.transform.position = nextSpawmPoint;
+        newTile.SetActive(true);
+        newTile.GetComponent<Tile>().Inicializar();
+        spawn = false;
+    }
+
     public float RoundToNearestMultiple(float number)
     {
-        //print(number + " / " + tileWith + " / " + Mathf.Round(number / tileWith) * tileWith);
         return Mathf.Round(number / tileWith) * tileWith;
     }
     void OnGameStateChanged(GAME_STATE _newGameState)
