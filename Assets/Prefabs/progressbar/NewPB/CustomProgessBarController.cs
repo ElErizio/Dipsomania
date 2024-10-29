@@ -35,7 +35,6 @@ public class CustomProgressBarController : MonoBehaviour
             {
                 Debug.Log("¡Ganaste!");
                 hasWon = true; 
-
                 GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
             }
         }

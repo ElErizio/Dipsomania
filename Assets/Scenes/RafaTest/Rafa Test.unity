@@ -2553,12 +2553,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3283663113611314913, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283663113611314913, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
       propertyPath: uiDocument
       value: 
       objectReference: {fileID: 522092880}
     - target: {fileID: 4323801927022988961, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
       propertyPath: m_Name
       value: NewPBHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323801927022988961, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4973229974903491961, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2616,6 +2624,10 @@ PrefabInstance:
     - target: {fileID: 71081831432219260, guid: 9f11092f9c09a7c449f485278dbe05c8, type: 3}
       propertyPath: m_Name
       value: ProgressBarDocument
+      objectReference: {fileID: 0}
+    - target: {fileID: 71081831432219260, guid: 9f11092f9c09a7c449f485278dbe05c8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7243378780595326896, guid: 9f11092f9c09a7c449f485278dbe05c8, type: 3}
       propertyPath: m_LocalPosition.x
