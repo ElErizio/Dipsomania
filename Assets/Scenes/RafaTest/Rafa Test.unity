@@ -2496,9 +2496,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 70684224}
     - target: {fileID: 4818983686308893936, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818983686308893936, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818983686308893936, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 70684224}
+    - target: {fileID: 4818983686308893936, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 275631654}
+    - target: {fileID: 4818983686308893936, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818983686308893936, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818983686308893936, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818983686308893936, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818983686308893936, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5343620489958704026, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: progressBarController
       value: 
