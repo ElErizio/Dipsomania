@@ -7,16 +7,16 @@ public class ScenarioGenerator : MonoBehaviour
     GAME_STATE gameState;
 
     public GameObject groundTile;
-    public GameObject finalTile; // Prefab de la casa del jugador (tile final)
+    public GameObject finalTile;
     public LayerMask mask;
     public int tileWith;
     public int defaultTilesCount;
-    public int totalTilesToSpawn; // Total de tiles que quieres generar antes del tile final
+    public int totalTilesToSpawn; 
     public Vector3 startPos;
     public Transform groundChecker;
     public GameObject destroyer;
 
-    private int tilesSpawnedCount = 0; // Contador de tiles generados
+    private int tilesSpawnedCount = 0;
     private bool isGrounding;
     private bool startSpawning, spawn;
     private Vector3 nextSpawmPoint;

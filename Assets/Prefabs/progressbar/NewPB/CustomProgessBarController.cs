@@ -10,7 +10,7 @@ public class CustomProgressBarController : MonoBehaviour
     private VisualElement progressBarFill;
     private float currentProgress = 0f;
     private bool hasWon = false;
-    private int totalTilesForProgress = 50;
+    private int totalTilesForProgress = 70;
 
     private void Start()
     {
