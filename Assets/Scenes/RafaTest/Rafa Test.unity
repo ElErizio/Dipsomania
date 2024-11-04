@@ -424,6 +424,32 @@ MonoBehaviour:
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &589044120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4665701641739570806, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+  m_PrefabInstance: {fileID: 2083891347}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &589044128
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589044120}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: f482dfae56e396d41a0c9711570caef9, type: 3}
+  m_Controller: {fileID: 9100000, guid: bbe03d5ad65192840912de3331ab351d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,8 +789,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730305e781be76443915ed9baca9ffa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseScreen: {fileID: 0}
   heartPrefab: {fileID: 7638770034758654914, guid: 2db91c38c48885b44ad4eb7b5a992ad1, type: 3}
   livesContainer: {fileID: 504668214}
+  gameOverPanel: {fileID: 932183910}
+  pauseButton: {fileID: 1812031933}
+  progressBarDocument: {fileID: 522092880}
 --- !u!1001 &932183909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1525,7 +1555,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4665701641739570806, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 589044128}
   m_SourcePrefab: {fileID: 100100000, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
 --- !u!1001 &2134181498
 PrefabInstance:

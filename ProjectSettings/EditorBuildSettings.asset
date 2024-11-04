@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: acad74f3be908b54b831fb7c9aee170a
+  - enabled: 1
+    path: Assets/Scenes/RafaTest/Rafa Test.unity
+    guid: 85ee477458defcb41977834b94fc2b51
   m_configObjects: {}
