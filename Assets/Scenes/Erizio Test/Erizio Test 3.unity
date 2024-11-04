@@ -799,6 +799,10 @@ PrefabInstance:
       propertyPath: MuerteEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 70684224}
+    - target: {fileID: 7611037471542851336, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: totalTilesToSpawn
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: invulnerableTime
       value: 3
