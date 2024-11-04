@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: ceb0a3ed2cb53a94fa21843cc958c52b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1342,8 +1342,14 @@ MonoBehaviour:
   - {fileID: 9033366826363162460, guid: 24c0b97f272c67147a6285c36d248277, type: 3}
   - {fileID: 1845081372096584723, guid: 3ce19da1a76613044ac17e9541187694, type: 3}
   arbolPF:
-  - {fileID: 919132149155446097, guid: 5b3ece510101a8d45b25aa4dc4c3a943, type: 3}
-  - {fileID: 5979566503791241944, guid: 9cf0b86ae0a0982469c7fbbd5592c28b, type: 3}
+  - {fileID: 675558793529484417, guid: c015bf99327328e4da128b7fc4726fc0, type: 3}
+  - {fileID: 7612004924660770623, guid: 7bd984aabc1dc44408f2b8a3ea494309, type: 3}
+  - {fileID: 2541380822028507631, guid: e65444050f7523147ad03e736558068e, type: 3}
+  - {fileID: 7170495917135973733, guid: 713a965f4e2ba2f48948ac7c15c5a5c1, type: 3}
+  - {fileID: 226916601155852728, guid: 6aa0d48af81c25c448624232ea112f60, type: 3}
+  - {fileID: 2333568458612573688, guid: 35c17c27607f54647bb73d229294c7aa, type: 3}
+  - {fileID: 6795260899998758966, guid: e2e730975c8bdb64e835a18389ed56aa, type: 3}
+  - {fileID: 2453701001267386925, guid: e9b43305a92fa704087bf963c4eae665, type: 3}
   pisoPF:
   - {fileID: 6809223376950153558, guid: fa296b4494fd79b4e8dccbf72177e6a4, type: 3}
   carroPF:
