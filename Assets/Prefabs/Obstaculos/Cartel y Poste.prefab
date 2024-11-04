@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8010203673160601780}
   - component: {fileID: 7575178184498818784}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Poste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,9 +64,9 @@ GameObject:
   m_Component:
   - component: {fileID: 445014273329200442}
   - component: {fileID: 365979680109361803}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cartel y Poste
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 1215899189154394379}
   - component: {fileID: 634981699316117765}
   - component: {fileID: 3404745254798772943}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,6 +246,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -655515190766560270, guid: 24e3e36729aa3ef4cbf6f98dd27b74fb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 773838507640681120, guid: 24e3e36729aa3ef4cbf6f98dd27b74fb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -253,6 +257,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 24e3e36729aa3ef4cbf6f98dd27b74fb, type: 3}
       propertyPath: m_Name
       value: Cartel
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24e3e36729aa3ef4cbf6f98dd27b74fb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

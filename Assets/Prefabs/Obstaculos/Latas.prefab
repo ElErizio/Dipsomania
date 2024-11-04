@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7736400046914484919}
   - component: {fileID: 6884670221877819603}
   - component: {fileID: 7381169994172596279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Latas
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,10 +139,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LataRefresco (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3566390031902043909, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4790207ae7ff8ca459d7389e30075de3, type: 2}
+    - target: {fileID: 3779745573541866595, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -205,10 +213,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LataRefresco (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3566390031902043909, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4790207ae7ff8ca459d7389e30075de3, type: 2}
+    - target: {fileID: 3779745573541866595, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -271,10 +287,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LataRefresco (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3566390031902043909, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4790207ae7ff8ca459d7389e30075de3, type: 2}
+    - target: {fileID: 3779745573541866595, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -337,10 +361,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LataRefresco
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3566390031902043909, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4790207ae7ff8ca459d7389e30075de3, type: 2}
+    - target: {fileID: 3779745573541866595, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -403,10 +435,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LataRefresco (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3566390031902043909, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4790207ae7ff8ca459d7389e30075de3, type: 2}
+    - target: {fileID: 3779745573541866595, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -469,10 +509,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LataRefresco (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3566390031902043909, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4790207ae7ff8ca459d7389e30075de3, type: 2}
+    - target: {fileID: 3779745573541866595, guid: 12284bad2a39c744c9da4e764ae790a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2974236831830261911}
   - component: {fileID: 6642933271691377908}
   - component: {fileID: 3335279259622559785}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Poste
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 9156055346351467702}
   - component: {fileID: 714120574110521709}
   - component: {fileID: 4507041976084155373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
