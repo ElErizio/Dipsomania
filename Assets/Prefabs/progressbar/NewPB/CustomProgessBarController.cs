@@ -4,9 +4,9 @@ using UnityEngine.UIElements;
 public class CustomProgressBarController : MonoBehaviour
 {
     public UIDocument uiDocument;
-    public GameObject victoryMenu; // Referencia al menú de victoria en el Canvas
-    public GameObject pauseButton; // Referencia al botón de pausa en el Canvas
-
+    public GameObject victoryMenu; 
+    public GameObject pauseButton;
+    public GameObject lifeLeft;
     private VisualElement progressBarFill;
     private float currentProgress = 0f;
     private bool hasWon = false;
@@ -26,7 +26,6 @@ public class CustomProgressBarController : MonoBehaviour
             UpdateProgress(0f);
         }
 
-        // Asegurarse de que el menú de victoria y el botón de pausa estén desactivados al inicio si corresponde
         if (victoryMenu != null)
         {
             victoryMenu.SetActive(false);
@@ -47,6 +46,7 @@ public class CustomProgressBarController : MonoBehaviour
 
                 ShowVictoryMenu();
                 HideProgressBar();
+                GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
             }
         }
     }
@@ -76,10 +76,10 @@ public class CustomProgressBarController : MonoBehaviour
             Debug.LogError("Victory menu no asignado en el Inspector.");
         }
 
-        // Ocultar el botón de pausa
         if (pauseButton != null)
         {
             pauseButton.SetActive(false);
+            lifeLeft.SetActive(false);
         }
         else
         {
