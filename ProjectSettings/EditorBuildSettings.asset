@@ -8,10 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: acad74f3be908b54b831fb7c9aee170a
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: acad74f3be908b54b831fb7c9aee170a
-  - enabled: 1
-    path: Assets/Scenes/AlexTest/Test_Lvl1_V2.unity
-    guid: cc149c02ea88a54458aadf9f377a31e1
   m_configObjects: {}
