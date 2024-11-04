@@ -9,4 +9,10 @@ public class ExitButton : MonoBehaviour
 
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void OnPlayButtonClicked()
+    {
+        // Al regresar al juego, recarga la última escena jugada
+        SceneManager.LoadScene("Rafa Test");
+    }
 }

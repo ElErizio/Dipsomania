@@ -4,16 +4,16 @@ using UnityEngine;
 [RequireComponent(typeof(Destruible))]
 public class Player : MonoBehaviour
 {
-    public int maxLives = 3; // Número máximo de vidas
-    private int currentLives; // Vidas actuales del jugador
-    private UI_Manager uiManager; // Referencia al UI_Manager para actualizar los corazones
+    public int maxLives = 3;
+    private int currentLives;
+    private UI_Manager uiManager;
 
     bool isOnPlay;
     Destruible destruible;
     Rigidbody rb;
 
-    public string invulnerableLMName; // Nombre de la capa para invulnerabilidad
-    public float invulnerableTime; // Tiempo de invulnerabilidad después de recibir daño
+    public string invulnerableLMName;
+    public float invulnerableTime;
     bool isInvulnerable;
     LayerMask defaultLM;
 
@@ -25,11 +25,10 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         GameManager.GetInstance().OnGameStateChanged += OnGameStateChanged;
 
-        // Obtener referencia al UI_Manager y mostrar vidas iniciales
         uiManager = FindObjectOfType<UI_Manager>();
         if (uiManager != null)
         {
-            uiManager.InitializeHearts(currentLives); // Inicializa los corazones en el UI
+            uiManager.InitializeHearts(currentLives);
         }
 
         OnGameStateChanged(GameManager.GetInstance().currentGameState);
@@ -51,7 +50,7 @@ public class Player : MonoBehaviour
                 {
                     print("Layer mask no encontrado, no funciona la invulnerabilidad");
                 }
-                TakeDamage(1); // Llamar a TakeDamage cuando el jugador recibe daño
+                TakeDamage(1);
             }
         }
     }
@@ -62,14 +61,18 @@ public class Player : MonoBehaviour
 
         if (uiManager != null)
         {
-            uiManager.RemoveHeart(); // Actualizar el UI eliminando un corazón
+            uiManager.RemoveHeart(); 
         }
 
         if (currentLives <= 0)
         {
-            // Lógica de game over si las vidas llegan a cero
             Debug.Log("Game Over");
             GameManager.GetInstance().ChangeGameState(GAME_STATE.GAME_OVER);
+
+            if (uiManager != null)
+            {
+                uiManager.ShowGameOverPanel();
+            }
         }
     }
 

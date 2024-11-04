@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     {
         if (instance != null && instance != this)
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
         }
         else
         {
@@ -66,4 +66,3 @@ public enum GAME_STATE
     GAME_OVER,
     MENU
 }
-

@@ -6,6 +6,7 @@ public class MovimientoJugador : MonoBehaviour
 {
     public float forwardSpeed = 5f;   
     public float tiltSensitivity = 2f;
+    Animator animator;
 
     private Rigidbody rb;
 
@@ -14,6 +15,7 @@ public class MovimientoJugador : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();    
         GameManager.GetInstance().OnGameStateChanged += OnGameStateChanged;
         OnGameStateChanged(GameManager.GetInstance().currentGameState);
     }
@@ -22,6 +24,8 @@ public class MovimientoJugador : MonoBehaviour
     {
         if (isOnPlay)
         {
+            animator.SetBool("isWalking", true);
+
             Vector3 forwardMovement = transform.forward * forwardSpeed * Time.deltaTime;
 
             float tilt = Input.acceleration.x;
@@ -30,6 +34,10 @@ public class MovimientoJugador : MonoBehaviour
             Vector3 movement = forwardMovement + lateralMovement;
 
             rb.MovePosition(rb.position + movement);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
         }
     }
 
