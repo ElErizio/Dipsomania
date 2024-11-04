@@ -87,6 +87,7 @@ public class ScenarioGenerator : MonoBehaviour
         GameObject finalTileInstance = Instantiate(finalTile, nextSpawmPoint, Quaternion.identity);
         finalTileInstance.transform.parent = null;
         finalTileInstance.SetActive(true);
+        finalTileInstance.GetComponent<Tile>().Inicializar();
 
         // Verificar si el objeto está activo y tiene la escala correcta
         if (!finalTileInstance.activeSelf)
