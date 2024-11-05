@@ -5,7 +5,6 @@ using UnityEngine.UIElements;
 
 public class UI_Manager : MonoBehaviour
 {
-    public GameObject pauseScreen;
     public GameObject heartPrefab;
     public Transform livesContainer;
     public GameObject gameOverPanel; // Reference to the Game Over panel
@@ -16,7 +15,6 @@ public class UI_Manager : MonoBehaviour
 
     void Start()
     {
-        pauseScreen.SetActive(false);
         gameOverPanel.SetActive(false); // Hide Game Over panel at the start
         if (pauseButton != null) pauseButton.SetActive(true); // Show pause button initially
         if (progressBarDocument != null) progressBarDocument.gameObject.SetActive(true); // Show progress bar initially
@@ -27,7 +25,6 @@ public class UI_Manager : MonoBehaviour
 
     void OnGameStateChanged(GAME_STATE _newGameState)
     {
-        pauseScreen.SetActive(_newGameState == GAME_STATE.PAUSE);
         Debug.Log("Game state changed: " + _newGameState);
     }
 
