@@ -4,28 +4,27 @@ using UnityEngine;
 
 public class ScenarioGenerator : MonoBehaviour
 {
-
     GAME_STATE gameState;
 
     public GameObject groundTile;
+    public GameObject finalTile;
     public LayerMask mask;
     public int tileWith;
     public int defaultTilesCount;
+    public int totalTilesToSpawn; 
     public Vector3 startPos;
     public Transform groundChecker;
     public GameObject destroyer;
-    bool isGrounding;
-    bool startSpawning, spawn;
-    Vector3 nextSpawmPoint;
+
+    private int tilesSpawnedCount = 0;
+    private bool isGrounding;
+    private bool startSpawning, spawn;
+    private Vector3 nextSpawmPoint;
 
     private void Start()
     {
         transform.position = startPos;
-        //transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, tileWith);
-        //nextSpawmPoint = transform.position - new Vector3(0, 0, tileWith);
-        //print(nextSpawmPoint);
         groundChecker.position = transform.position + new Vector3(0, 0, (-tileWith / 2));
-        print(groundChecker.position);
         destroyer.transform.position = transform.position - new Vector3(0, 0, tileWith * defaultTilesCount + defaultTilesCount);
         GameManager.GetInstance().OnGameStateChanged += OnGameStateChanged;
         SpawnDefault();
@@ -54,32 +53,63 @@ public class ScenarioGenerator : MonoBehaviour
             }
         }
     }
+
     void SpawnTile()
     {
+        if (tilesSpawnedCount >= totalTilesToSpawn) 
+        {
+            SpawnFinalTile(); 
+            startSpawning = false;
+            return;
+        }
+
         nextSpawmPoint = new Vector3(0, 0, RoundToNearestMultiple(transform.position.z));
-        //GameObject newTile = Instantiate(groundTile, nextSpawmPoint, Quaternion.identity);
         GameObject newTile = PoolMaster.GetInstance().GetTileToSpawn();
         newTile.transform.parent = null;
         newTile.transform.position = nextSpawmPoint;
         newTile.SetActive(true);
         newTile.GetComponent<Tile>().Inicializar();
+
+        tilesSpawnedCount++; 
         spawn = false;
     }
 
     void SpawnFinalTile()
     {
-        GameObject newTile = Instantiate(groundTile, nextSpawmPoint, Quaternion.identity);
-        newTile.transform.parent = null;
-        newTile.transform.position = nextSpawmPoint;
-        newTile.SetActive(true);
-        newTile.GetComponent<Tile>().Inicializar();
-        spawn = false;
+        nextSpawmPoint = new Vector3(0, 0, RoundToNearestMultiple(transform.position.z));
+
+        if (finalTile == null)
+        {
+            Debug.LogError("El prefab 'finalTile' no está asignado en el Inspector.");
+            return;
+        }
+
+        GameObject finalTileInstance = Instantiate(finalTile, nextSpawmPoint, Quaternion.identity);
+        finalTileInstance.transform.parent = null;
+        finalTileInstance.SetActive(true);
+        finalTileInstance.GetComponent<Tile>().Inicializar();
+
+        // Verificar si el objeto está activo y tiene la escala correcta
+        if (!finalTileInstance.activeSelf)
+        {
+            Debug.LogWarning("El tile final está inactivo después de la instanciación.");
+        }
+
+        if (finalTileInstance.transform.localScale == Vector3.zero)
+        {
+            Debug.LogWarning("La escala del tile final es cero. Ajustando a 1,1,1.");
+            finalTileInstance.transform.localScale = Vector3.one;
+        }
+
+        Debug.Log("Tile final generado con éxito en la posición: " + nextSpawmPoint);
     }
+
 
     public float RoundToNearestMultiple(float number)
     {
         return Mathf.Round(number / tileWith) * tileWith;
     }
+
     void OnGameStateChanged(GAME_STATE _newGameState)
     {
         gameState = _newGameState;

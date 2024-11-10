@@ -1,10 +1,12 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Destruible))]
 public class Player : MonoBehaviour
 {
+    public int maxLives = 3;
+    private int currentLives;
+    private UI_Manager uiManager;
 
     bool isOnPlay;
     Destruible destruible;
@@ -14,14 +16,24 @@ public class Player : MonoBehaviour
     public float invulnerableTime;
     bool isInvulnerable;
     LayerMask defaultLM;
+
     private void Start()
     {
+        currentLives = maxLives;
         defaultLM = gameObject.layer;
         destruible = GetComponent<Destruible>();
         rb = GetComponent<Rigidbody>();
         GameManager.GetInstance().OnGameStateChanged += OnGameStateChanged;
+
+        uiManager = FindObjectOfType<UI_Manager>();
+        if (uiManager != null)
+        {
+            uiManager.InitializeHearts(currentLives);
+        }
+
         OnGameStateChanged(GameManager.GetInstance().currentGameState);
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (isOnPlay)
@@ -36,13 +48,33 @@ public class Player : MonoBehaviour
                 }
                 catch
                 {
-                    print("Layer mask no encontrado, no funciona la invensibilidad");
+                    print("Layer mask no encontrado, no funciona la invulnerabilidad");
                 }
-                destruible.RecibirDanio(1);
+                TakeDamage(1);
             }
         }
     }
 
+    private void TakeDamage(int damage)
+    {
+        currentLives -= damage;
+
+        if (uiManager != null)
+        {
+            uiManager.RemoveHeart(); 
+        }
+
+        if (currentLives <= 0)
+        {
+            Debug.Log("Game Over");
+            GameManager.GetInstance().ChangeGameState(GAME_STATE.GAME_OVER);
+
+            if (uiManager != null)
+            {
+                uiManager.ShowGameOverPanel();
+            }
+        }
+    }
 
     void OnGameStateChanged(GAME_STATE _gs)
     {
@@ -51,7 +83,6 @@ public class Player : MonoBehaviour
         if (!isOnPlay)
         {
             rb.velocity = Vector3.zero;
-            
         }
     }
 
