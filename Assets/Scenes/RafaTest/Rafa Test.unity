@@ -789,7 +789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730305e781be76443915ed9baca9ffa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseScreen: {fileID: 0}
   heartPrefab: {fileID: 7638770034758654914, guid: 2db91c38c48885b44ad4eb7b5a992ad1, type: 3}
   livesContainer: {fileID: 504668214}
   gameOverPanel: {fileID: 932183910}
@@ -1384,6 +1383,8 @@ MonoBehaviour:
   - {fileID: 6809223376950153558, guid: fa296b4494fd79b4e8dccbf72177e6a4, type: 3}
   carroPF:
   - {fileID: 5413708075779547028, guid: a1811c5bb8cfce8418d97f50612ef33d, type: 3}
+  casafPF:
+  - {fileID: 6169436687506495295, guid: 62243404b4ffd1d4ea5884c4ced2fab3, type: 3}
 --- !u!4 &2044102705
 Transform:
   m_ObjectHideFlags: 0
@@ -1480,7 +1481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4030028154665563391, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: forwardSpeed
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4326855004388327930, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: m_Mesh
