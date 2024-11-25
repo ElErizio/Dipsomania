@@ -12,6 +12,8 @@ public class CustomProgressBarController : MonoBehaviour
     public ScenarioGenerator scenarioGenerator; // Referencia al generador de tiles
 
     private VisualElement progressBarFill;
+    private VisualElement runnerIcon;
+    private VisualElement houseIcon;
     private float currentProgress = 0f;
     private bool hasWon = false;
 
@@ -21,6 +23,8 @@ public class CustomProgressBarController : MonoBehaviour
     {
         var root = uiDocument.rootVisualElement;
         progressBarFill = root.Q<VisualElement>("progress-bar-fill");
+        runnerIcon = root.Q<VisualElement>("runner-icon");
+        houseIcon = root.Q<VisualElement>("house-icon");
 
         if (progressBarFill == null)
         {
@@ -72,6 +76,12 @@ public class CustomProgressBarController : MonoBehaviour
         {
             float translateY = 100 - percentage;
             progressBarFill.style.translate = new StyleTranslate(new Translate(0, Length.Percent(translateY), 0));
+
+            // Actualiza la posición del monito
+            if (runnerIcon != null)
+            {
+                runnerIcon.style.left = new Length(percentage, LengthUnit.Percent);
+            }
         }
     }
 

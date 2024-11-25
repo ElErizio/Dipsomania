@@ -19,3 +19,23 @@
     left: 0;
     transform-origin: bottom;
 }
+
+.runner-icon {
+    position: absolute;
+    top: -20px; 
+    left: 60px; 
+    width: 60px;
+    height: 60px;
+    background-image: url("monito.png");
+    background-size: cover;
+}
+
+.house-icon {
+    position: absolute;
+    top: -20px; 
+    right: 0px; 
+    width: 100px;
+    height: 100px;
+    background-image: url("casa.png");
+    background-size: cover;
+}
