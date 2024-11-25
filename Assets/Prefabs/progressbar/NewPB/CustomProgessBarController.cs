@@ -4,18 +4,27 @@ using UnityEngine.UIElements;
 public class CustomProgressBarController : MonoBehaviour
 {
     public UIDocument uiDocument;
-    public GameObject victoryMenu; 
+    public GameObject victoryMenu;
     public GameObject pauseButton;
     public GameObject lifeLeft;
+
+    public Transform playerTransform; // Referencia a la posición del jugador
+    public ScenarioGenerator scenarioGenerator; // Referencia al generador de tiles
+
     private VisualElement progressBarFill;
+    private VisualElement runnerIcon;
+    private VisualElement houseIcon;
     private float currentProgress = 0f;
     private bool hasWon = false;
-    private int totalTilesForProgress = 70;
+
+    private Vector3 finalTilePosition;
 
     private void Start()
     {
         var root = uiDocument.rootVisualElement;
         progressBarFill = root.Q<VisualElement>("progress-bar-fill");
+        runnerIcon = root.Q<VisualElement>("runner-icon");
+        houseIcon = root.Q<VisualElement>("house-icon");
 
         if (progressBarFill == null)
         {
@@ -30,33 +39,49 @@ public class CustomProgressBarController : MonoBehaviour
         {
             victoryMenu.SetActive(false);
         }
+
+        finalTilePosition = scenarioGenerator.GetFinalTilePosition();
     }
 
-    public void IncrementProgress()
+    private void Update()
     {
         if (!hasWon)
         {
-            currentProgress += 100f / totalTilesForProgress;
-            UpdateProgress(currentProgress);
-
-            if (currentProgress >= 100f)
-            {
-                Debug.Log("¡Ganaste!");
-                hasWon = true;
-
-                ShowVictoryMenu();
-                HideProgressBar();
-                GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
-            }
+            UpdateProgressBar();
         }
     }
 
-    public void UpdateProgress(float percentage)
+    private void UpdateProgressBar()
+    {
+        float totalDistance = Vector3.Distance(Vector3.zero, finalTilePosition);
+        float remainingDistance = Vector3.Distance(playerTransform.position, finalTilePosition);
+
+        currentProgress = 100f * (1 - (remainingDistance / totalDistance));
+        UpdateProgress(currentProgress);
+
+        if (currentProgress >= 100f)
+        {
+            Debug.Log("¡Ganaste!");
+            hasWon = true;
+
+            ShowVictoryMenu();
+            HideProgressBar();
+            GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
+        }
+    }
+
+    private void UpdateProgress(float percentage)
     {
         if (progressBarFill != null)
         {
             float translateY = 100 - percentage;
             progressBarFill.style.translate = new StyleTranslate(new Translate(0, Length.Percent(translateY), 0));
+
+            // Actualiza la posición del monito
+            if (runnerIcon != null)
+            {
+                runnerIcon.style.left = new Length(percentage, LengthUnit.Percent);
+            }
         }
     }
 

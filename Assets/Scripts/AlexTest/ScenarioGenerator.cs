@@ -104,8 +104,13 @@ public class ScenarioGenerator : MonoBehaviour
         Debug.Log("Tile final generado con éxito en la posición: " + nextSpawmPoint);
     }
 
+    public Vector3 GetFinalTilePosition()
+    {
+        return nextSpawmPoint; // O la posición exacta de la tile final
+    
+    }
 
-    public float RoundToNearestMultiple(float number)
+        public float RoundToNearestMultiple(float number)
     {
         return Mathf.Round(number / tileWith) * tileWith;
     }

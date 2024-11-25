@@ -794,6 +794,17 @@ MonoBehaviour:
   gameOverPanel: {fileID: 932183910}
   pauseButton: {fileID: 1812031933}
   progressBarDocument: {fileID: 522092880}
+--- !u!114 &929053267 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7611037471542851336, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+  m_PrefabInstance: {fileID: 2083891347}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d405821a5728e34caa0f87743fd56ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &932183909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1564,7 +1575,7 @@ PrefabInstance:
       objectReference: {fileID: 2034163347787779529, guid: cdd15f6c14d4daf469ccb393096f6b67, type: 3}
     - target: {fileID: 7611037471542851336, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: totalTilesToSpawn
-      value: 8
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: invulnerableTime
@@ -1755,6 +1766,14 @@ PrefabInstance:
       propertyPath: victoryMenu
       value: 
       objectReference: {fileID: 405263048}
+    - target: {fileID: 3283663113611314913, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 272152288}
+    - target: {fileID: 3283663113611314913, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
+      propertyPath: scenarioGenerator
+      value: 
+      objectReference: {fileID: 929053267}
     - target: {fileID: 4323801927022988961, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
       propertyPath: m_Name
       value: NewPBHandler
