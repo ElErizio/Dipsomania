@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Ostaculo
+  - WinTrigger
   layers:
   - Default
   - TransparentFX

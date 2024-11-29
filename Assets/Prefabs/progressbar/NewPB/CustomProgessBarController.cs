@@ -4,20 +4,16 @@ using UnityEngine.UIElements;
 public class CustomProgressBarController : MonoBehaviour
 {
     public UIDocument uiDocument;
-    public GameObject victoryMenu;
-    public GameObject pauseButton;
-    public GameObject lifeLeft;
 
     public Transform playerTransform; // Referencia a la posición del jugador
-    public ScenarioGenerator scenarioGenerator; // Referencia al generador de tiles
 
     private VisualElement progressBarFill;
     private VisualElement runnerIcon;
     private VisualElement houseIcon;
     private float currentProgress = 0f;
-    private bool hasWon = false;
 
-    private Vector3 finalTilePosition;
+    private Vector3 startPosition;
+    private Vector3 finalTilePosition = new Vector3(0, 0, 400); // Posición fija de la tile final
 
     private void Start()
     {
@@ -35,39 +31,21 @@ public class CustomProgressBarController : MonoBehaviour
             UpdateProgress(0f);
         }
 
-        if (victoryMenu != null)
-        {
-            victoryMenu.SetActive(false);
-        }
-
-        finalTilePosition = scenarioGenerator.GetFinalTilePosition();
+        startPosition = playerTransform.position;
     }
 
     private void Update()
     {
-        if (!hasWon)
-        {
-            UpdateProgressBar();
-        }
+        UpdateProgressBar();
     }
 
     private void UpdateProgressBar()
     {
-        float totalDistance = Vector3.Distance(Vector3.zero, finalTilePosition);
-        float remainingDistance = Vector3.Distance(playerTransform.position, finalTilePosition);
+        float totalDistance = Vector3.Distance(startPosition, finalTilePosition);
+        float traveledDistance = Vector3.Distance(startPosition, playerTransform.position);
 
-        currentProgress = 100f * (1 - (remainingDistance / totalDistance));
+        currentProgress = 100f * (traveledDistance / totalDistance);
         UpdateProgress(currentProgress);
-
-        if (currentProgress >= 100f)
-        {
-            Debug.Log("¡Ganaste!");
-            hasWon = true;
-
-            ShowVictoryMenu();
-            HideProgressBar();
-            GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
-        }
     }
 
     private void UpdateProgress(float percentage)
@@ -80,35 +58,8 @@ public class CustomProgressBarController : MonoBehaviour
             // Actualiza la posición del monito
             if (runnerIcon != null)
             {
-                runnerIcon.style.left = new Length(percentage, LengthUnit.Percent);
+                runnerIcon.style.bottom = new Length(percentage, LengthUnit.Percent);
             }
-        }
-    }
-
-    private void HideProgressBar()
-    {
-        uiDocument.gameObject.SetActive(false);
-    }
-
-    private void ShowVictoryMenu()
-    {
-        if (victoryMenu != null)
-        {
-            victoryMenu.SetActive(true);
-        }
-        else
-        {
-            Debug.LogError("Victory menu no asignado en el Inspector.");
-        }
-
-        if (pauseButton != null)
-        {
-            pauseButton.SetActive(false);
-            lifeLeft.SetActive(false);
-        }
-        else
-        {
-            Debug.LogError("Pause button no asignado en el Inspector.");
         }
     }
 }

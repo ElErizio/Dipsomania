@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ScenarioGenerator : MonoBehaviour
 {
+    public event Action<Vector3> OnFinalTileGenerated; // Evento para notificar cuando se calcule la posición final
+
     GAME_STATE gameState;
 
     public GameObject groundTile;
@@ -11,7 +14,7 @@ public class ScenarioGenerator : MonoBehaviour
     public LayerMask mask;
     public int tileWith;
     public int defaultTilesCount;
-    public int totalTilesToSpawn; 
+    public int totalTilesToSpawn;
     public Vector3 startPos;
     public Transform groundChecker;
     public GameObject destroyer;
@@ -20,6 +23,7 @@ public class ScenarioGenerator : MonoBehaviour
     private bool isGrounding;
     private bool startSpawning, spawn;
     private Vector3 nextSpawmPoint;
+    private Vector3 finalTilePosition;
 
     private void Start()
     {
@@ -29,6 +33,14 @@ public class ScenarioGenerator : MonoBehaviour
         GameManager.GetInstance().OnGameStateChanged += OnGameStateChanged;
         SpawnDefault();
         startSpawning = true;
+
+        CalculateFinalTilePosition();
+    }
+
+    private void CalculateFinalTilePosition()
+    {
+        finalTilePosition = startPos + new Vector3(0, 0, tileWith * totalTilesToSpawn);
+        OnFinalTileGenerated?.Invoke(finalTilePosition); // Notificar la posición final
     }
 
     private void SpawnDefault()
@@ -56,9 +68,9 @@ public class ScenarioGenerator : MonoBehaviour
 
     void SpawnTile()
     {
-        if (tilesSpawnedCount >= totalTilesToSpawn) 
+        if (tilesSpawnedCount >= totalTilesToSpawn)
         {
-            SpawnFinalTile(); 
+            SpawnFinalTile();
             startSpawning = false;
             return;
         }
@@ -70,7 +82,7 @@ public class ScenarioGenerator : MonoBehaviour
         newTile.SetActive(true);
         newTile.GetComponent<Tile>().Inicializar();
 
-        tilesSpawnedCount++; 
+        tilesSpawnedCount++;
         spawn = false;
     }
 
@@ -106,11 +118,10 @@ public class ScenarioGenerator : MonoBehaviour
 
     public Vector3 GetFinalTilePosition()
     {
-        return nextSpawmPoint; // O la posición exacta de la tile final
-    
+        return finalTilePosition;
     }
 
-        public float RoundToNearestMultiple(float number)
+    public float RoundToNearestMultiple(float number)
     {
         return Mathf.Round(number / tileWith) * tileWith;
     }

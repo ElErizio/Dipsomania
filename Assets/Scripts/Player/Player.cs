@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
     bool isInvulnerable;
     LayerMask defaultLM;
 
+    public GameObject victoryMenu;
+    public GameObject pauseButton;
+    public GameObject lifeLeft;
+
     private void Start()
     {
         currentLives = maxLives;
@@ -55,13 +59,21 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (isOnPlay && other.CompareTag("WinTrigger"))
+        {
+            WinGame();
+        }
+    }
+
     private void TakeDamage(int damage)
     {
         currentLives -= damage;
 
         if (uiManager != null)
         {
-            uiManager.RemoveHeart(); 
+            uiManager.RemoveHeart();
         }
 
         if (currentLives <= 0)
@@ -73,6 +85,35 @@ public class Player : MonoBehaviour
             {
                 uiManager.ShowGameOverPanel();
             }
+        }
+    }
+
+    private void WinGame()
+    {
+        Debug.Log("¡Ganaste!");
+        ShowVictoryMenu();
+        GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
+    }
+
+    private void ShowVictoryMenu()
+    {
+        if (victoryMenu != null)
+        {
+            victoryMenu.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("Victory menu no asignado en el Inspector.");
+        }
+
+        if (pauseButton != null)
+        {
+            pauseButton.SetActive(false);
+            lifeLeft.SetActive(false);
+        }
+        else
+        {
+            Debug.LogError("Pause button no asignado en el Inspector.");
         }
     }
 

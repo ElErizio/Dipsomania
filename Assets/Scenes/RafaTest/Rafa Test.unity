@@ -1156,7 +1156,6 @@ GameObject:
   - component: {fileID: 1597632868}
   - component: {fileID: 1597632870}
   - component: {fileID: 1597632869}
-  - component: {fileID: 1597632871}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1223,20 +1222,6 @@ MonoBehaviour:
   oscillationIntensity: 0.05
   oscillationSpeed: 5
   player: {fileID: 272152288}
---- !u!114 &1597632871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597632866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 222200e6b74bfe54fb96cf0fa2156f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeRemaining: 60
-  timerText: {fileID: 0}
 --- !u!1 &1679372353 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8210925386009695136, guid: f43dff93197d2fa4abbf9dfe91474d61, type: 3}
