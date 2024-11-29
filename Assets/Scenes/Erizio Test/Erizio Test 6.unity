@@ -794,6 +794,17 @@ MonoBehaviour:
   gameOverPanel: {fileID: 932183910}
   pauseButton: {fileID: 1812031933}
   progressBarDocument: {fileID: 522092880}
+--- !u!114 &929053267 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7611037471542851336, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+  m_PrefabInstance: {fileID: 2083891347}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d405821a5728e34caa0f87743fd56ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &932183909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1376,6 +1387,9 @@ MonoBehaviour:
   - {fileID: 9033366826363162460, guid: c8d8a1faaa2ec0e4d8287ff7f9055438, type: 3}
   - {fileID: 9033366826363162460, guid: b296c89fdc8fe754abd6f23f8c3e5d6f, type: 3}
   - {fileID: 9033366826363162460, guid: 3c4356aa83abd3c4398ecc5992ec38c1, type: 3}
+  - {fileID: 1845081372096584723, guid: 75a2b88b22bea7d4f9a03fc9721e338f, type: 3}
+  - {fileID: 8995749050477324687, guid: c6104c10121e2b54d93284585fa6777d, type: 3}
+  - {fileID: 8995749050477324687, guid: 63f29de099369934db37b5fc56edcf3c, type: 3}
   arbolPF:
   - {fileID: 675558793529484417, guid: c015bf99327328e4da128b7fc4726fc0, type: 3}
   - {fileID: 7612004924660770623, guid: 7bd984aabc1dc44408f2b8a3ea494309, type: 3}
@@ -1386,9 +1400,11 @@ MonoBehaviour:
   - {fileID: 6795260899998758966, guid: e2e730975c8bdb64e835a18389ed56aa, type: 3}
   - {fileID: 2453701001267386925, guid: e9b43305a92fa704087bf963c4eae665, type: 3}
   pisoPF:
-  - {fileID: 6809223376950153558, guid: fa296b4494fd79b4e8dccbf72177e6a4, type: 3}
+  - {fileID: 4101641403571223214, guid: f0509e2264350744db3b6789d0afa93b, type: 3}
   carroPF:
   - {fileID: 5413708075779547028, guid: a1811c5bb8cfce8418d97f50612ef33d, type: 3}
+  - {fileID: 5413708075779547028, guid: 427ad0de5bb606b4e935f945d704e93d, type: 3}
+  - {fileID: 5413708075779547028, guid: 88f3c7758ab532f4caf9338aec08d950, type: 3}
   casafPF:
   - {fileID: 6169436687506495295, guid: 62243404b4ffd1d4ea5884c4ced2fab3, type: 3}
 --- !u!4 &2044102705
@@ -1546,15 +1562,7 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5174594938205305236, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5174594938205305236, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: fdd4af4a38aa0964189536a17251364a, type: 2}
-    - target: {fileID: 5174594938205305236, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
-      propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: fdd4af4a38aa0964189536a17251364a, type: 2}
     - target: {fileID: 5343620489958704026, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
@@ -1567,7 +1575,7 @@ PrefabInstance:
       objectReference: {fileID: 2034163347787779529, guid: cdd15f6c14d4daf469ccb393096f6b67, type: 3}
     - target: {fileID: 7611037471542851336, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: totalTilesToSpawn
-      value: 8
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: invulnerableTime
@@ -1758,6 +1766,14 @@ PrefabInstance:
       propertyPath: victoryMenu
       value: 
       objectReference: {fileID: 405263048}
+    - target: {fileID: 3283663113611314913, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 272152288}
+    - target: {fileID: 3283663113611314913, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
+      propertyPath: scenarioGenerator
+      value: 
+      objectReference: {fileID: 929053267}
     - target: {fileID: 4323801927022988961, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
       propertyPath: m_Name
       value: NewPBHandler
