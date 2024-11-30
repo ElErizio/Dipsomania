@@ -13,7 +13,7 @@ public class CustomProgressBarController : MonoBehaviour
     private float currentProgress = 0f;
 
     private Vector3 startPosition;
-    private Vector3 finalTilePosition = new Vector3(0, 0, 400); // Posición fija de la tile final
+    public Vector3 finalTilePosition = new Vector3(0, 0, 400); // Posición fija de la tile final
 
     private void Start()
     {

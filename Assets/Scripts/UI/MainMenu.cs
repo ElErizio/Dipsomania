@@ -7,4 +7,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Rafa Test");
     }
+
+    public void PlayTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }
