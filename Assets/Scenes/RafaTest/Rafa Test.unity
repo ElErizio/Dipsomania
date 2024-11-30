@@ -1563,6 +1563,18 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: lifeLeft
+      value: 
+      objectReference: {fileID: 1679372353}
+    - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 1812031933}
+    - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: victoryMenu
+      value: 
+      objectReference: {fileID: 405263048}
+    - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: invulnerableTime
       value: 3
       objectReference: {fileID: 0}
