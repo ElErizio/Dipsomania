@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: 0246299a3eb91fc4583b3c9e1f531a1c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: telefono_5
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 265
+        width: 204
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbd24621a190c04a9253b21ac88c4d8
+      internalID: 1370733566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: telefono_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 216
+        width: 196
+        height: 698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4770cb6a9a9dd1f48a85fd38dd2aa1e4
+      internalID: 1453571984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: telefono_22
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 234
+        width: 348
+        height: 618
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d64c8ac36afc14d83f57cd83c64c9b
+      internalID: -503447656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 11a9dfa2a0a40284281d0937364ba312
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      telefono_0: -1367995787
+      telefono_1: 1795600296
+      telefono_10: 221429847
+      telefono_11: 135938974
+      telefono_12: -1987631340
+      telefono_13: -938361994
+      telefono_14: 415010539
+      telefono_15: -1880127514
+      telefono_16: 1142156454
+      telefono_17: -1362094904
+      telefono_18: 98428497
+      telefono_19: 575011456
+      telefono_2: 2010020596
+      telefono_20: -440935006
+      telefono_21: -390813288
+      telefono_22: -503447656
+      telefono_23: -1627330058
+      telefono_24: 1404992536
+      telefono_25: -1410425508
+      telefono_26: 322247228
+      telefono_27: -835539036
+      telefono_28: -679322371
+      telefono_29: 1014368838
+      telefono_3: -425996412
+      telefono_30: -769081523
+      telefono_31: -406673740
+      telefono_32: -670985055
+      telefono_33: 1423557622
+      telefono_34: -1633475359
+      telefono_35: 63647553
+      telefono_36: -1131522259
+      telefono_37: 371304947
+      telefono_38: -283903861
+      telefono_39: -1480980256
+      telefono_4: -264210535
+      telefono_40: -1689810276
+      telefono_41: -2142098590
+      telefono_42: 1872559877
+      telefono_43: 1716152640
+      telefono_44: -1811785644
+      telefono_45: -1072102513
+      telefono_46: -316256173
+      telefono_47: 1277297267
+      telefono_48: 817358114
+      telefono_49: 819021079
+      telefono_5: 1370733566
+      telefono_50: -1421802952
+      telefono_51: 1726958569
+      telefono_52: -440253326
+      telefono_53: 1154454862
+      telefono_54: 946108168
+      telefono_55: -1493548344
+      telefono_56: 108026398
+      telefono_57: -379837895
+      telefono_58: -1703108954
+      telefono_59: -597016413
+      telefono_6: 970594807
+      telefono_60: 791371315
+      telefono_61: 1061537336
+      telefono_62: -393228704
+      telefono_63: 1505812475
+      telefono_64: 424047024
+      telefono_65: -1313342112
+      telefono_66: 2126116064
+      telefono_67: 2030188399
+      telefono_68: -1644230744
+      telefono_69: 742467073
+      telefono_7: 1453571984
+      telefono_70: -1765411253
+      telefono_71: -1300130694
+      telefono_8: -1919673811
+      telefono_9: -207569402
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

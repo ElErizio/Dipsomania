@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: 23afb87d4bf4e4c44b948f8e0ecd398d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: telefono2_1
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 265
+        width: 202
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380ad016a25eb0f4881152a2e18ce822
+      internalID: 1068519603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: telefono2_6
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 216
+        width: 195
+        height: 699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fde85ca4321e74b9a3b1177bb62ed7
+      internalID: -2115951748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: telefono2_12
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 235
+        width: 348
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5307743a5549c5d4e89a348190d74c12
+      internalID: 2063680475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d236e22c1e6e4b14792394439fdedd7d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      telefono2_0: -432803526
+      telefono2_1: 1068519603
+      telefono2_10: -1713766340
+      telefono2_11: -1048688163
+      telefono2_12: 2063680475
+      telefono2_13: 173647969
+      telefono2_14: 754552039
+      telefono2_15: 303680964
+      telefono2_16: 492835201
+      telefono2_17: 873915470
+      telefono2_18: 666503185
+      telefono2_19: -1019061647
+      telefono2_2: 318875881
+      telefono2_20: -1076090293
+      telefono2_21: -1058906474
+      telefono2_22: 486383161
+      telefono2_23: -1654879389
+      telefono2_24: 383686375
+      telefono2_25: -289028706
+      telefono2_26: 1457353571
+      telefono2_27: 696167369
+      telefono2_28: 1471323672
+      telefono2_29: 1877848967
+      telefono2_3: -695880688
+      telefono2_30: -60240940
+      telefono2_31: 2136103301
+      telefono2_32: 1283488429
+      telefono2_33: 1317991012
+      telefono2_34: 1369773268
+      telefono2_35: 618969352
+      telefono2_36: 2071366718
+      telefono2_37: 1728447484
+      telefono2_38: -910629343
+      telefono2_39: 2063064384
+      telefono2_4: 1788346144
+      telefono2_40: 317730066
+      telefono2_41: -1575048749
+      telefono2_42: 645454905
+      telefono2_43: 248068867
+      telefono2_44: 394760857
+      telefono2_45: 1214469992
+      telefono2_46: 1543652637
+      telefono2_47: -2091816536
+      telefono2_48: 481018099
+      telefono2_49: -466168889
+      telefono2_5: -319090444
+      telefono2_6: -2115951748
+      telefono2_7: -350544995
+      telefono2_8: 1531034687
+      telefono2_9: -1348897219
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
