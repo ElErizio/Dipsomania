@@ -11,7 +11,7 @@ public class Playlist : MonoBehaviour
     void Awake()
     {
         // Asegurarse de que el objeto no se destruya entre escenas
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject);
         audioSource = GetComponent<AudioSource>();
 
         if (canciones.Count > 0)
