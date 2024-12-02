@@ -1151,6 +1151,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb12acdc01e5e2147b22a17196dc0944, type: 3}
+--- !u!114 &843393909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7774413429722913066, guid: cb12acdc01e5e2147b22a17196dc0944, type: 3}
+  m_PrefabInstance: {fileID: 843393908}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &868294165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,6 +1469,7 @@ GameObject:
   - component: {fileID: 1144341370}
   - component: {fileID: 1144341369}
   - component: {fileID: 1144341368}
+  - component: {fileID: 1144341372}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1557,6 +1569,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1144341372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144341367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730305e781be76443915ed9baca9ffa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartPrefab: {fileID: 0}
+  brokenBottlePrefab: {fileID: 0}
+  livesContainer: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  pauseButton: {fileID: 0}
+  tutorialPanel: {fileID: 0}
+  progressBarDocument: {fileID: 0}
+  distanceText: {fileID: 843393909}
 --- !u!1 &1155019211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,7 +2588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1968361896
 RectTransform:
   m_ObjectHideFlags: 0
