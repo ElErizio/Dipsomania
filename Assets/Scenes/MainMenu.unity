@@ -525,7 +525,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 236838679}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1113550588}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SkinBasica
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &236838679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,7 +658,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 258432341}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1113550588}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SkinJoker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &258432341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,17 +860,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Seleccionar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: ebaafd9ca9e99f6479dc76b763eef03a, type: 2}
+  m_sharedMaterial: {fileID: 5405919206897224156, guid: ebaafd9ca9e99f6479dc76b763eef03a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -858,7 +882,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -1047,17 +1071,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Seleccionar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: ebaafd9ca9e99f6479dc76b763eef03a, type: 2}
+  m_sharedMaterial: {fileID: 5405919206897224156, guid: ebaafd9ca9e99f6479dc76b763eef03a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1069,7 +1093,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -1377,17 +1401,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Seleccionar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: ebaafd9ca9e99f6479dc76b763eef03a, type: 2}
+  m_sharedMaterial: {fileID: 5405919206897224156, guid: ebaafd9ca9e99f6479dc76b763eef03a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1546,7 +1570,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 610594351}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1113550588}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SkinNegro
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &610594351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2588,6 +2624,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994154771}
   m_CullTransparentMesh: 1
+--- !u!1001 &1113550587
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6377180403621943944, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585460003654226193, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585460003654226193, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585460003654226193, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585460003654226193, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585460003654226193, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585460003654226193, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585460003654226193, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585460003654226193, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585460003654226193, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585460003654226193, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+--- !u!114 &1113550588 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6141385109509875330, guid: 1bcbc115c50609c42bfe6a9f1148db3c, type: 3}
+  m_PrefabInstance: {fileID: 1113550587}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56daa9dc8280a04498a1a0289e05e85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1144341367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3977,7 +4081,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1670193141}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1113550588}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SkinRubio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1670193141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4073,17 +4189,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Seleccionar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: ebaafd9ca9e99f6479dc76b763eef03a, type: 2}
+  m_sharedMaterial: {fileID: 5405919206897224156, guid: ebaafd9ca9e99f6479dc76b763eef03a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4095,7 +4211,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -4472,12 +4588,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5e1259bd282f84f843cc54ea49d04b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterPrefab: {fileID: 4665701641739570806, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
-  skins:
-  - {fileID: 2100000, guid: fdd4af4a38aa0964189536a17251364a, type: 2}
-  - {fileID: 2100000, guid: 506adc946b4cadd418cb864a0f8babba, type: 2}
-  - {fileID: 2100000, guid: a8f1d0af439c0574496312f66f5ac07e, type: 2}
-  - {fileID: 2100000, guid: a5697dd2a258cf3408ccb9a3d9aad599, type: 2}
+  characterPrefab: {fileID: 0}
+  skins: []
 --- !u!1 &2136005935
 GameObject:
   m_ObjectHideFlags: 0
@@ -4660,6 +4772,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd0785ff94c60a24ba44fc746a2d79b5, type: 3}
+--- !u!1001 &752091649764649689
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1714590678960986017, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714590678960986017, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714590678960986017, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714590678960986017, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714590678960986017, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714590678960986017, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714590678960986017, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714590678960986017, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714590678960986017, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714590678960986017, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380807119792745767, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
+      propertyPath: m_Name
+      value: ShopManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d096b6b7e24ed664cb0eaaf55d9fd97a, type: 3}
 --- !u!1001 &2162932525330508463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4958,7 +5127,9 @@ SceneRoots:
   - {fileID: 694379643}
   - {fileID: 290087865}
   - {fileID: 225773912}
+  - {fileID: 752091649764649689}
   - {fileID: 2893262633128941012}
+  - {fileID: 1113550587}
   - {fileID: 2022245341}
   - {fileID: 2073533190}
   - {fileID: 1144341371}

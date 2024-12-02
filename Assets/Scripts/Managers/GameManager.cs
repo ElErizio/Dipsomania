@@ -24,6 +24,12 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    void Start()
+    {
+        SkinShopManager.Instance.LoadPrefabSkin();
+    }
+
+
     public Action<GAME_STATE> OnGameStateChanged;
     public GAME_STATE currentGameState = GAME_STATE.PLAY;
 
@@ -40,6 +46,36 @@ public class GameManager : MonoBehaviour
         {
             OnGameStateChanged.Invoke(currentGameState);
         }
+    }
+
+    public Action<SKIN_SELECTED> onSkinChanged;
+    public SKIN_SELECTED currentSkin;
+    public void ChangeSkinState(SKIN_SELECTED _selectedSkin)
+    {
+        currentSkin = _selectedSkin;
+        Debug.Log("Current skin: " + currentSkin);
+
+        if (onSkinChanged != null)
+        {
+            onSkinChanged.Invoke(currentSkin);
+        }
+    }
+
+    public void SkinBasica()
+    {
+        GameManager.GetInstance().ChangeSkinState(SKIN_SELECTED.BASICO);
+    }
+    public void SkinNegro()
+    {
+        GameManager.GetInstance().ChangeSkinState(SKIN_SELECTED.NEGRO);
+    }
+    public void SkinRubio()
+    {
+        GameManager.GetInstance().ChangeSkinState(SKIN_SELECTED.RUBIO);
+    }
+    public void SkinJoker()
+    {
+        GameManager.GetInstance().ChangeSkinState(SKIN_SELECTED.JOKER);
     }
 
     public void Update()
@@ -65,4 +101,12 @@ public enum GAME_STATE
     PAUSE,
     GAME_OVER,
     MENU
+}
+
+public enum SKIN_SELECTED
+{
+    BASICO,
+    NEGRO,
+    RUBIO,
+    JOKER
 }
