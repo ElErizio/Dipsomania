@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 public class UI_Manager : MonoBehaviour
 {
     public GameObject heartPrefab;
+    public GameObject brokenBottlePrefab; // Prefab de la botella rota
     public Transform livesContainer;
     public GameObject gameOverPanel; // Reference to the Game Over panel
     public GameObject pauseButton; // Reference to the Pause button on the Canvas
@@ -51,7 +52,10 @@ public class UI_Manager : MonoBehaviour
         {
             GameObject heart = hearts[hearts.Count - 1];
             hearts.RemoveAt(hearts.Count - 1);
-            heart.SetActive(false);
+            Destroy(heart); // Destruye el corazón
+
+            // Instancia la botella rota en la misma posición que el corazón destruido
+            GameObject brokenBottle = Instantiate(brokenBottlePrefab, heart.transform.position, heart.transform.rotation, livesContainer);
         }
     }
 
@@ -65,7 +69,7 @@ public class UI_Manager : MonoBehaviour
 
         if (pauseButton != null)
         {
-            pauseButton.SetActive(false); 
+            pauseButton.SetActive(false);
         }
 
         if (tutorialPanel != null)
@@ -75,7 +79,7 @@ public class UI_Manager : MonoBehaviour
 
         if (progressBarDocument != null)
         {
-            progressBarDocument.gameObject.SetActive(false); 
+            progressBarDocument.gameObject.SetActive(false);
         }
     }
 }

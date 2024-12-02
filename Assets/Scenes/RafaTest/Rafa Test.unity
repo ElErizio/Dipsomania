@@ -790,6 +790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartPrefab: {fileID: 3836294747599926309, guid: a8e37ca68edfab347a052b832a4beefe, type: 3}
+  brokenBottlePrefab: {fileID: 2030502734909337633, guid: fce4724bf1c8e7044ad823b34cdb6698, type: 3}
   livesContainer: {fileID: 504668214}
   gameOverPanel: {fileID: 932183910}
   pauseButton: {fileID: 1812031933}
@@ -2104,7 +2105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7763923627128225534, guid: 7d45dfb6a305cec41872b0876e8a66e4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7973962103967720709, guid: 7d45dfb6a305cec41872b0876e8a66e4, type: 3}
       propertyPath: m_LocalPosition.z
