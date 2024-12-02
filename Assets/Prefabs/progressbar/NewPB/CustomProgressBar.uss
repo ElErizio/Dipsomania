@@ -23,19 +23,19 @@
 .runner-icon {
     position: absolute;
     top: -20px; 
-    left: 60px; 
-    width: 60px;
-    height: 60px;
+    left: -10px; 
+    width: 40px;
+    height: 40px;
     background-image: url("monito.png");
     background-size: cover;
 }
 
 .house-icon {
     position: absolute;
-    top: -20px; 
-    right: 0px; 
-    width: 100px;
-    height: 100px;
+    top: -10px; 
+    right: -15px; 
+    width: 60px;
+    height: 60px;
     background-image: url("casa.png");
     background-size: cover;
 }
