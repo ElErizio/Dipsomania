@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Destruible))]
 public class Player : MonoBehaviour
@@ -20,6 +21,8 @@ public class Player : MonoBehaviour
     public GameObject victoryMenu;
     public GameObject pauseButton;
     public GameObject lifeLeft;
+    public GameObject tutorialPanel;
+    public UIDocument progressBarDocument;
 
     private void Start()
     {
@@ -110,10 +113,8 @@ public class Player : MonoBehaviour
         {
             pauseButton.SetActive(false);
             lifeLeft.SetActive(false);
-        }
-        else
-        {
-            Debug.LogError("Pause button no asignado en el Inspector.");
+            tutorialPanel.SetActive(false);
+            progressBarDocument.gameObject.SetActive(false);
         }
     }
 

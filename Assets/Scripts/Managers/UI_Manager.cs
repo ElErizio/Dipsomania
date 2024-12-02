@@ -9,6 +9,7 @@ public class UI_Manager : MonoBehaviour
     public Transform livesContainer;
     public GameObject gameOverPanel; // Reference to the Game Over panel
     public GameObject pauseButton; // Reference to the Pause button on the Canvas
+    public GameObject tutorialPanel;
     public UIDocument progressBarDocument; // Reference to the progress bar UIDocument
 
     private List<GameObject> hearts = new List<GameObject>();
@@ -64,12 +65,17 @@ public class UI_Manager : MonoBehaviour
 
         if (pauseButton != null)
         {
-            pauseButton.SetActive(false); // Hide the pause button
+            pauseButton.SetActive(false); 
+        }
+
+        if (tutorialPanel != null)
+        {
+            tutorialPanel.gameObject.SetActive(false);
         }
 
         if (progressBarDocument != null)
         {
-            progressBarDocument.gameObject.SetActive(false); // Hide the progress bar
+            progressBarDocument.gameObject.SetActive(false); 
         }
     }
 }

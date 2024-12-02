@@ -789,10 +789,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730305e781be76443915ed9baca9ffa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartPrefab: {fileID: 7638770034758654914, guid: 2db91c38c48885b44ad4eb7b5a992ad1, type: 3}
+  heartPrefab: {fileID: 3836294747599926309, guid: a8e37ca68edfab347a052b832a4beefe, type: 3}
   livesContainer: {fileID: 504668214}
   gameOverPanel: {fileID: 932183910}
   pauseButton: {fileID: 1812031933}
+  tutorialPanel: {fileID: 0}
   progressBarDocument: {fileID: 522092880}
 --- !u!114 &929053267 stripped
 MonoBehaviour:
@@ -1655,6 +1656,10 @@ PrefabInstance:
       propertyPath: invulnerableTime
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: progressBarDocument
+      value: 
+      objectReference: {fileID: 522092880}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
