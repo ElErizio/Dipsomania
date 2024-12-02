@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
 
     public string invulnerableLMName;
     public float invulnerableTime;
+    public float totalDistance;
     bool isInvulnerable;
     LayerMask defaultLM;
 
@@ -38,7 +39,32 @@ public class Player : MonoBehaviour
             uiManager.InitializeHearts(currentLives);
         }
 
+        // Cargar la distancia total almacenada
+        totalDistance = PlayerPrefs.GetFloat("TotalDistance", 0f);
+
         OnGameStateChanged(GameManager.GetInstance().currentGameState);
+
+        // Actualizar el texto de distancia al inicio
+        if (uiManager != null)
+        {
+            uiManager.UpdateDistanceText(totalDistance);
+        }
+    }
+
+    private void Update()
+    {
+        if (isOnPlay)
+        {
+            totalDistance += rb.velocity.magnitude * Time.deltaTime * 200;
+
+            PlayerPrefs.SetFloat("TotalDistance", totalDistance);
+            PlayerPrefs.Save();
+
+            if (uiManager != null)
+            {
+                uiManager.UpdateDistanceText(totalDistance);
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -88,6 +114,9 @@ public class Player : MonoBehaviour
             {
                 uiManager.ShowGameOverPanel();
             }
+
+            PlayerPrefs.SetFloat("TotalDistance", totalDistance);
+            PlayerPrefs.Save();
         }
     }
 
@@ -96,6 +125,9 @@ public class Player : MonoBehaviour
         Debug.Log("¡Ganaste!");
         ShowVictoryMenu();
         GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
+
+        PlayerPrefs.SetFloat("TotalDistance", totalDistance);
+        PlayerPrefs.Save();
     }
 
     private void ShowVictoryMenu()

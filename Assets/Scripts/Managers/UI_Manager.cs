@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 using System.Collections.Generic;
 using UnityEngine.UIElements;
 
@@ -12,6 +12,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject pauseButton; // Reference to the Pause button on the Canvas
     public GameObject tutorialPanel;
     public UIDocument progressBarDocument; // Reference to the progress bar UIDocument
+    public TextMeshProUGUI distanceText; // Referencia al objeto de texto TextMeshPro en el menú de configuraciones
 
     private List<GameObject> hearts = new List<GameObject>();
 
@@ -23,6 +24,15 @@ public class UI_Manager : MonoBehaviour
         GameManager.GetInstance().OnGameStateChanged += OnGameStateChanged;
 
         InitializeHearts(3); // Initialize with the maximum number of lives
+
+        // Actualizar el texto de distancia al inicio
+        UpdateDistanceText(PlayerPrefs.GetFloat("TotalDistance", 0f));
+    }
+
+    void OnEnable()
+    {
+        // Actualizar el texto de distancia al abrir el menú de configuraciones
+        UpdateDistanceText(PlayerPrefs.GetFloat("TotalDistance", 0f));
     }
 
     void OnGameStateChanged(GAME_STATE _newGameState)
@@ -80,6 +90,15 @@ public class UI_Manager : MonoBehaviour
         if (progressBarDocument != null)
         {
             progressBarDocument.gameObject.SetActive(false);
+        }
+    }
+
+    // Actualizar el texto de distancia total en el menú de configuraciones
+    public void UpdateDistanceText(float distance)
+    {
+        if (distanceText != null)
+        {
+            distanceText.text = "Distancia Total: " + distance.ToString("F2") + " metros";
         }
     }
 }
