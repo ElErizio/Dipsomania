@@ -39,12 +39,10 @@ public class Player : MonoBehaviour
             uiManager.InitializeHearts(currentLives);
         }
 
-        // Cargar la distancia total almacenada
         totalDistance = PlayerPrefs.GetFloat("TotalDistance", 0f);
 
         OnGameStateChanged(GameManager.GetInstance().currentGameState);
 
-        // Actualizar el texto de distancia al inicio
         if (uiManager != null)
         {
             uiManager.UpdateDistanceText(totalDistance);
