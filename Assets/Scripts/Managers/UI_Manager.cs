@@ -1,7 +1,8 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
-using UnityEngine.UIElements;
+using UnityEngine.UI; // Para UI tradicional (uGUI)
+using UnityEngine.UIElements; // Para UI Toolkit
 
 public class UI_Manager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject tutorialPanel;
     public UIDocument progressBarDocument; // Reference to the progress bar UIDocument
     public TextMeshProUGUI distanceText; // Referencia al objeto de texto TextMeshPro en el menú de configuraciones
+    public UnityEngine.UI.Button resetButton; // Especificar el namespace completo
 
     private List<GameObject> hearts = new List<GameObject>();
 
@@ -27,6 +29,12 @@ public class UI_Manager : MonoBehaviour
 
         // Actualizar el texto de distancia al inicio
         UpdateDistanceText(PlayerPrefs.GetFloat("TotalDistance", 0f));
+
+        // Asignar el método al botón de reset en el Inspector
+        if (resetButton != null)
+        {
+            resetButton.onClick.AddListener(ResetDistance);
+        }
     }
 
     void OnEnable()
@@ -100,5 +108,14 @@ public class UI_Manager : MonoBehaviour
         {
             distanceText.text = "Distancia Total: " + distance.ToString("F2") + " metros";
         }
+    }
+
+    // Método para reiniciar la distancia total
+    public void ResetDistance()
+    {
+        PlayerPrefs.SetFloat("TotalDistance", 0f);
+        PlayerPrefs.Save();
+        UpdateDistanceText(0f);
+        Debug.Log("Distancia total reiniciada.");
     }
 }
