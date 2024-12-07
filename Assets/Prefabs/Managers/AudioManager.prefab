@@ -44,8 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13b247f848b69f42820d3cfb0acf6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 3964793748545421553, guid: 579878ede5ddc8a4b9287acbe0c78d75, type: 3}
-  musicSourceMenu: {fileID: 8039993292621569217, guid: a4f857719f971934abca94fd7dc8356c, type: 3}
-  soundEffectsSource: {fileID: 3525096665223842332, guid: 7df2a06b0b544ca49b0dbb2757e0b475, type: 3}
   musicSlider: {fileID: 0}
   soundEffectsSlider: {fileID: 0}
+  currentMusicSource: {fileID: 0}
+  currentSoundEffectsSource: {fileID: 0}

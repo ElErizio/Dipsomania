@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4991944582955476241}
+  - component: {fileID: 4536352834899068297}
   - component: {fileID: 3964793748545421553}
   m_Layer: 0
   m_Name: EmisorMusica
@@ -32,6 +33,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4536352834899068297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7552898483258305035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad2e2c9931544c4c9b90e5a15c1b7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canciones:
+  - {fileID: 8300000, guid: 13d55674e58e72c458e4c964fe5d11d3, type: 3}
+  - {fileID: 8300000, guid: 8ea15d8f4ac072f48a85b1f39851ecb0, type: 3}
+  - {fileID: 8300000, guid: 823d50b0d3bb48e449123322bc15ba0e, type: 3}
+  - {fileID: 8300000, guid: b16eac82dcccf3e4598d276f96d03ca5, type: 3}
 --- !u!82 &3964793748545421553
 AudioSource:
   m_ObjectHideFlags: 0
@@ -44,7 +62,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8ea15d8f4ac072f48a85b1f39851ecb0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.41391948
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0

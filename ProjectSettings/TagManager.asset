@@ -9,6 +9,7 @@ TagManager:
   - WinTrigger
   - SliderMusica
   - SliderSFX
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX

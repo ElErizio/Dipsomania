@@ -1,3 +1,4 @@
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,20 +8,13 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
 
+    [Header("UI Sliders")] 
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider soundEffectsSlider;
+
     [Header("Audio Sources")]
-    public GameObject musicSource;
-    public GameObject musicSourceMenu;
-    public GameObject soundEffectsSource;
-
-    [Header("UI Sliders")]
-    [SerializeField] public Slider musicSlider;
-    [SerializeField] public Slider soundEffectsSlider;
-
-
-    private float volumeMusic;
-    private float volumeSFX;
-    private const string MusicVolumeKey = "MusicVolume";
-    private const string SoundEffectsVolumeKey = "SoundEffectsVolume";
+    [SerializeField]private AudioSource currentMusicSource;
+    [SerializeField]private AudioSource currentSoundEffectsSource;
 
     private void Awake()
     {
@@ -40,42 +34,36 @@ public class AudioManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("OnSceneLoaded: " + scene.name);
-        Debug.Log(mode);
-
-        if (GameObject.FindWithTag("SliderMusica"))
+        
+        if (currentMusicSource == null)
         {
-            Debug.Log("Chinga tu madre un Slider de musica OMG");
+            currentMusicSource = GameObject.Find("EmisorMusica").GetComponent<AudioSource>();
         }
-        else
+        
+        if (currentSoundEffectsSource == null)
         {
-            return;
+            currentSoundEffectsSource = GameObject.Find("EmisorSFX").GetComponent<AudioSource>();
         }
+        
+        musicSlider = Resources.FindObjectsOfTypeAll<Slider>().FirstOrDefault(s => s.CompareTag("SliderMusica"));
+        soundEffectsSlider = Resources.FindObjectsOfTypeAll<Slider>().FirstOrDefault(s => s.CompareTag("SliderSFX"));
 
-        musicSlider = GameObject.FindGameObjectWithTag("SliderMusica").GetComponent<Slider>();
-       
-        // Attach listeners to the sliders if they exist
-        if (scene.name == "MainMenu")
+        musicSlider.onValueChanged.AddListener(SetMusicVolume);
+        soundEffectsSlider.onValueChanged.AddListener(SetSoundEffectsVolume);
+        
+        if (PlayerPrefs.HasKey("MusicVolume"))
         {
-            volumeMusic = musicSlider.value;
-            AudioSource musicMenu = Instantiate(musicSourceMenu).GetComponent<AudioSource>();
-            musicMenu.volume = volumeMusic;
-            Debug.Log("Se cargaron los sliders de la musica");
-        }
-
-        if (scene.name == "Rafa Test")
-        {
-            volumeMusic = musicSlider.value;
-            AudioSource music = Instantiate(musicSource).GetComponent<AudioSource>();
-            music.volume = volumeMusic;
-            Debug.Log("Se cargaron los sliders de la musica");
+            float savedMusicVolume = PlayerPrefs.GetFloat("MusicVolume");
+            musicSlider.value = savedMusicVolume;
+            SetMusicVolume(savedMusicVolume);
         }
 
-        soundEffectsSlider = GameObject.FindGameObjectWithTag("SliderSFX").GetComponent<Slider>();
-        AudioSource sfx = Instantiate(soundEffectsSource).GetComponent<AudioSource>();
-        volumeSFX = soundEffectsSlider.value;
-        sfx.volume = soundEffectsSlider.value;
-        Debug.Log("Se cargaron los sliders de los efectos");
-
+        if (PlayerPrefs.HasKey("SFXVolume"))
+        {
+            float savedSFXVolume = PlayerPrefs.GetFloat("SFXVolume");
+            soundEffectsSlider.value = savedSFXVolume;
+            SetSoundEffectsVolume(savedSFXVolume);
+        }
     }
 
     void OnDisable()
@@ -83,16 +71,15 @@ public class AudioManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    /* public void SetMusicVolume(float volume)
+    public void SetMusicVolume(float volume)
     {
-        musicSource.GetComponent<AudioSource>().volume = volume;
-        PlayerPrefs.SetFloat(MusicVolumeKey, volume);
-        
+        currentMusicSource.GetComponent<AudioSource>().volume = volume;
+        PlayerPrefs.SetFloat("MusicVolume", volume); 
+    }
 
     public void SetSoundEffectsVolume(float volume)
     {
-        soundEffectsSource.GetComponent<AudioSource>().volume = volume;
-        PlayerPrefs.SetFloat(SoundEffectsVolumeKey, volume);
-        PlayerPrefs.Save();
-    }*/
+        currentSoundEffectsSource.GetComponent<AudioSource>().volume = volume;
+        PlayerPrefs.SetFloat("SFXVolume", volume); 
+    }
 }
