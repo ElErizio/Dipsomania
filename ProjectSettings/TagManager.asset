@@ -7,6 +7,8 @@ TagManager:
   - Obstacle
   - Ostaculo
   - WinTrigger
+  - SliderMusica
+  - SliderSFX
   layers:
   - Default
   - TransparentFX

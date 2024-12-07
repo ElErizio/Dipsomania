@@ -9,8 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 799623217083631230}
-  - component: {fileID: 4420032925522864867}
-  - component: {fileID: 5237667848859848565}
+  - component: {fileID: 2067421153440117108}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -33,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4420032925522864867
+--- !u!114 &2067421153440117108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,25 +41,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5036456440938306754}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9922f493d0b1064e9f13d5e37a20073, type: 3}
+  m_Script: {fileID: 11500000, guid: a13b247f848b69f42820d3cfb0acf6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
-  sliderValue: 0
-  imagenMute: {fileID: 0}
---- !u!114 &5237667848859848565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5036456440938306754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21e4e0f294a89c34a94f66135191d726, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 0}
-  sliderValue: 0
-  imagenMute: {fileID: 0}
-  musica: {fileID: 0}
+  musicSource: {fileID: 3964793748545421553, guid: 579878ede5ddc8a4b9287acbe0c78d75, type: 3}
+  musicSourceMenu: {fileID: 8039993292621569217, guid: a4f857719f971934abca94fd7dc8356c, type: 3}
+  soundEffectsSource: {fileID: 3525096665223842332, guid: 7df2a06b0b544ca49b0dbb2757e0b475, type: 3}
+  musicSlider: {fileID: 0}
+  soundEffectsSlider: {fileID: 0}

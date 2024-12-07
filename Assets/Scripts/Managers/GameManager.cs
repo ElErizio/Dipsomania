@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        SkinShopManager.Instance.LoadPrefabSkin();
+        SkinShopManager2.Instance.LoadSavedSkin();
     }
 
 
