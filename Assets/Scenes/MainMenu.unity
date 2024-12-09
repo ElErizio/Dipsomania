@@ -3481,14 +3481,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: ebaafd9ca9e99f6479dc76b763eef03a, type: 2}
+  m_sharedMaterial: {fileID: 5405919206897224156, guid: ebaafd9ca9e99f6479dc76b763eef03a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4281479730
   m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3501,7 +3501,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -4550,6 +4550,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: a5697dd2a258cf3408ccb9a3d9aad599, type: 2}
   - {fileID: 2100000, guid: 506adc946b4cadd418cb864a0f8babba, type: 2}
   - {fileID: 2100000, guid: a8f1d0af439c0574496312f66f5ac07e, type: 2}
+  currentSkinIndex: 0
 --- !u!1001 &2162932525330508463
 PrefabInstance:
   m_ObjectHideFlags: 0

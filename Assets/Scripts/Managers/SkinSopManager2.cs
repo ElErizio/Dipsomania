@@ -12,6 +12,8 @@ public class SkinShopManager2 : MonoBehaviour
 
     private const string SkinKey = "SelectedSkin";
 
+    public int currentSkinIndex = 0;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -31,9 +33,11 @@ public class SkinShopManager2 : MonoBehaviour
         if (PlayerPrefs.HasKey(SkinKey))
         {
             int savedSkinIndex = PlayerPrefs.GetInt(SkinKey);
+            currentSkinIndex = savedSkinIndex;
 
             if (savedSkinIndex >= 0 && savedSkinIndex < skins.Length)
             {
+                Debug.Log("La skin está cargada: " + savedSkinIndex);
                 ApplySkin(savedSkinIndex);
             }
         }
@@ -48,6 +52,7 @@ public class SkinShopManager2 : MonoBehaviour
     {
         if (skinIndex >= 0 && skinIndex < skins.Length)
         {
+            currentSkinIndex = skinIndex;
             ApplySkin(skinIndex);
 
             // Guardar el índice de la skin seleccionada

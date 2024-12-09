@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class _PlayerSkin : MonoBehaviour
 {
-    public bool isBasico, isNegro, isRubio, isJoker;
     public Material[] skins;
 
-    private SkinnedMeshRenderer skinnedMeshRenderer;
+    public SkinnedMeshRenderer skinnedMeshRenderer;
 
     private void Awake()
     {
         // Obtener el componente SkinnedMeshRenderer del GameObject
-        skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
+        skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
         if (skinnedMeshRenderer == null)
         {
             Debug.LogError("No se encontró un Skinned Mesh Renderer en el GameObject.");
@@ -46,5 +45,7 @@ public class _PlayerSkin : MonoBehaviour
     {
         GameManager.GetInstance().onSkinChanged += onSkinChanged;
         onSkinChanged(GameManager.GetInstance().currentSkin);
+
+
     }
 }
