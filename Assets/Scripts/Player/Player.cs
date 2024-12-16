@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement; // Add this for scene management
 
 [RequireComponent(typeof(Destruible))]
 public class Player : MonoBehaviour
@@ -121,6 +122,16 @@ public class Player : MonoBehaviour
     private void WinGame()
     {
         Debug.Log("¡Ganaste!");
+
+        // Check if the current scene is the tutorial scene
+        if (SceneManager.GetActiveScene().name == "Tutorial")
+        {
+            // Mark tutorial as completed in PlayerPrefs
+            PlayerPrefs.SetInt("TutorialFinished", 1);
+            PlayerPrefs.Save();
+            Debug.Log("Tutorial Completed!");
+        }
+
         ShowVictoryMenu();
         GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
 

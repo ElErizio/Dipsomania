@@ -1366,6 +1366,8 @@ MonoBehaviour:
   pauseButton: {fileID: 1812031933}
   tutorialPanel: {fileID: 578065594}
   progressBarDocument: {fileID: 522092880}
+  distanceText: {fileID: 0}
+  resetButton: {fileID: 0}
 --- !u!1001 &925586208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2251,6 +2253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGameState: 0
+  currentSkin: 0
 --- !u!114 &1597632869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2287,6 +2290,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8210925386009695136, guid: f43dff93197d2fa4abbf9dfe91474d61, type: 3}
   m_PrefabInstance: {fileID: 2568924771280697614}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1699172391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1699172392}
+  m_Layer: 0
+  m_Name: GameObject_Verif
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1699172392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699172391}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.5901966, y: 4.36266, z: 4.1779723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1706730400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3390,3 +3424,4 @@ SceneRoots:
   - {fileID: 2083891347}
   - {fileID: 3317832809772357281}
   - {fileID: 1269142753097896017}
+  - {fileID: 1699172392}
