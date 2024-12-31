@@ -789,12 +789,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730305e781be76443915ed9baca9ffa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseScreen: {fileID: 0}
   heartPrefab: {fileID: 7638770034758654914, guid: 2db91c38c48885b44ad4eb7b5a992ad1, type: 3}
+  brokenBottlePrefab: {fileID: 0}
   livesContainer: {fileID: 504668214}
   gameOverPanel: {fileID: 932183910}
   pauseButton: {fileID: 1812031933}
+  tutorialPanel: {fileID: 0}
   progressBarDocument: {fileID: 522092880}
+  distanceText: {fileID: 0}
+  resetButton: {fileID: 0}
 --- !u!1001 &932183909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1146,7 +1149,6 @@ GameObject:
   - component: {fileID: 1597632868}
   - component: {fileID: 1597632870}
   - component: {fileID: 1597632869}
-  - component: {fileID: 1597632871}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1182,6 +1184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGameState: 0
+  currentSkin: 0
 --- !u!114 &1597632869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,20 +1216,6 @@ MonoBehaviour:
   oscillationIntensity: 0.05
   oscillationSpeed: 5
   player: {fileID: 272152288}
---- !u!114 &1597632871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597632866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 222200e6b74bfe54fb96cf0fa2156f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeRemaining: 60
-  timerText: {fileID: 0}
 --- !u!1 &1679372353 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8210925386009695136, guid: f43dff93197d2fa4abbf9dfe91474d61, type: 3}
@@ -1372,18 +1361,22 @@ MonoBehaviour:
   - {fileID: 9033366826363162460, guid: 24c0b97f272c67147a6285c36d248277, type: 3}
   - {fileID: 1845081372096584723, guid: 3ce19da1a76613044ac17e9541187694, type: 3}
   arbolPF:
-  - {fileID: 675558793529484417, guid: c015bf99327328e4da128b7fc4726fc0, type: 3}
-  - {fileID: 7612004924660770623, guid: 7bd984aabc1dc44408f2b8a3ea494309, type: 3}
   - {fileID: 2541380822028507631, guid: e65444050f7523147ad03e736558068e, type: 3}
-  - {fileID: 7170495917135973733, guid: 713a965f4e2ba2f48948ac7c15c5a5c1, type: 3}
-  - {fileID: 226916601155852728, guid: 6aa0d48af81c25c448624232ea112f60, type: 3}
-  - {fileID: 2333568458612573688, guid: 35c17c27607f54647bb73d229294c7aa, type: 3}
   - {fileID: 6795260899998758966, guid: e2e730975c8bdb64e835a18389ed56aa, type: 3}
-  - {fileID: 2453701001267386925, guid: e9b43305a92fa704087bf963c4eae665, type: 3}
+  - {fileID: 7190407247491102455, guid: ed1dfd226a8bf2f418f812b254707036, type: 3}
+  - {fileID: 4065657541280965923, guid: 357b31d3b75bae24ba0434ac20bfa6d3, type: 3}
+  - {fileID: 7106475104585563728, guid: d0540a66e665f984eab241d84c8a9963, type: 3}
+  - {fileID: 8486655151723186539, guid: cf28a4dd9a1a5b948a40dd44a4392f11, type: 3}
+  - {fileID: 6078147265337650630, guid: 12b2740ba4d685d44b88fc851762c050, type: 3}
+  - {fileID: 2765798489084193564, guid: 1bc597b28c7ec094ba5b6245d4f2d8a0, type: 3}
+  - {fileID: 2640160363092932039, guid: 326f610c539203045bc6abaae4b1c381, type: 3}
+  - {fileID: 3980929361169126246, guid: a097589a867bb7f44aec2bd4dc0eb20d, type: 3}
+  - {fileID: 6732218111529586189, guid: c6d6be7c66d7d034ea50ceeb6c7c0c01, type: 3}
   pisoPF:
-  - {fileID: 6809223376950153558, guid: fa296b4494fd79b4e8dccbf72177e6a4, type: 3}
+  - {fileID: 4101641403571223214, guid: f0509e2264350744db3b6789d0afa93b, type: 3}
   carroPF:
   - {fileID: 5413708075779547028, guid: a1811c5bb8cfce8418d97f50612ef33d, type: 3}
+  casafPF: []
 --- !u!4 &2044102705
 Transform:
   m_ObjectHideFlags: 0
@@ -1480,7 +1473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4030028154665563391, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: forwardSpeed
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4326855004388327930, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: m_Mesh
@@ -1555,9 +1548,25 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: lifeLeft
+      value: 
+      objectReference: {fileID: 1679372353}
+    - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 1812031933}
+    - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: victoryMenu
+      value: 
+      objectReference: {fileID: 405263048}
+    - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
       propertyPath: invulnerableTime
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8595872470214908962, guid: 713bbe6a1d2ee4b489dc5d9f7a8c5d57, type: 3}
+      propertyPath: progressBarDocument
+      value: 
+      objectReference: {fileID: 522092880}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1743,6 +1752,10 @@ PrefabInstance:
       propertyPath: victoryMenu
       value: 
       objectReference: {fileID: 405263048}
+    - target: {fileID: 3283663113611314913, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 272152288}
     - target: {fileID: 4323801927022988961, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
       propertyPath: m_Name
       value: NewPBHandler
