@@ -2452,6 +2452,8 @@ MonoBehaviour:
   - {fileID: 2765798489084193564, guid: 1bc597b28c7ec094ba5b6245d4f2d8a0, type: 3}
   - {fileID: 6078147265337650630, guid: 12b2740ba4d685d44b88fc851762c050, type: 3}
   - {fileID: 2640160363092932039, guid: 326f610c539203045bc6abaae4b1c381, type: 3}
+  - {fileID: 6732218111529586189, guid: c6d6be7c66d7d034ea50ceeb6c7c0c01, type: 3}
+  - {fileID: 6078147265337650630, guid: 12b2740ba4d685d44b88fc851762c050, type: 3}
   pisoPF:
   - {fileID: 4101641403571223214, guid: f0509e2264350744db3b6789d0afa93b, type: 3}
   carroPF:
