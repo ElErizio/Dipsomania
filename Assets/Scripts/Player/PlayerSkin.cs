@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerSkin : MonoBehaviour
 {
+    /*
     public bool isBasico, isNegro, isRubio, isJoker;
     public Material[] skins;
 
@@ -30,4 +31,5 @@ public class PlayerSkin : MonoBehaviour
         GameManager.GetInstance().onSkinChanged += onSkinChanged;
         onSkinChanged(GameManager.GetInstance().currentSkin);
     }
+    */
 }

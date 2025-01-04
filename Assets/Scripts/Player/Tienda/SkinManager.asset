@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef8298aeab5bcc4fb16e94e2f8bea9c, type: 3}
+  m_Name: SkinManager
+  m_EditorClassIdentifier: 
+  skins:
+  - skinImage: {fileID: 21300000, guid: bcecd77069672f44fb251b1c3449bbca, type: 3}
+    skinMaterial: {fileID: 2100000, guid: fdd4af4a38aa0964189536a17251364a, type: 2}
+    price: 0
+  - skinImage: {fileID: 21300000, guid: 3b695c2b82a4f7446ac743daa5cf1755, type: 3}
+    skinMaterial: {fileID: 2100000, guid: a5697dd2a258cf3408ccb9a3d9aad599, type: 2}
+    price: 10
+  - skinImage: {fileID: 21300000, guid: 1144f790f60574b46aaa9b2bbb3b4f2d, type: 3}
+    skinMaterial: {fileID: 2100000, guid: 506adc946b4cadd418cb864a0f8babba, type: 2}
+    price: 20
+  - skinImage: {fileID: 21300000, guid: 593185d682577554fbb8b5869374a4fa, type: 3}
+    skinMaterial: {fileID: 2100000, guid: a8f1d0af439c0574496312f66f5ac07e, type: 2}
+    price: 30
