@@ -12,7 +12,10 @@ public class ShopMenu : MonoBehaviour
 
     void Update()
     {
-        money.text = "Puntos: " + PlayerPrefs.GetFloat("TotalDistance");
+        int totalDistance = Mathf.FloorToInt(PlayerPrefs.GetFloat("TotalDistance"));
+
+        // money.text = "Puntos: " + PlayerPrefs.GetFloat("TotalDistance");
+        money.text = "Puntos: " + totalDistance;
         // selectedSkin.sprite = skinManager.OnSelectedSkin().skinImage;
     }
 

@@ -310,10 +310,29 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 9121001394045212517, guid: 6ebee719b4bd05f49833935355400cc8, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6650944
+      objectReference: {fileID: 0}
+    - target: {fileID: 9121001394045212517, guid: 6ebee719b4bd05f49833935355400cc8, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6650944
+      objectReference: {fileID: 0}
+    - target: {fileID: 9121001394045212517, guid: 6ebee719b4bd05f49833935355400cc8, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9121001394045212517, guid: 6ebee719b4bd05f49833935355400cc8, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7173709190102238798, guid: 6ebee719b4bd05f49833935355400cc8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 481161033}
   m_SourcePrefab: {fileID: 100100000, guid: 6ebee719b4bd05f49833935355400cc8, type: 3}
 --- !u!1001 &212605770
 PrefabInstance:
@@ -552,6 +571,39 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7173709190102238798, guid: 6ebee719b4bd05f49833935355400cc8, type: 3}
   m_PrefabInstance: {fileID: 185445559}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &481161033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481161027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19b7e2285c104f6ca47d583f3e5444f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 300
+  m_EffectMaterial: {fileID: 2100000, guid: 9dc7e810a87b444ab96919f3215c2fe5, type: 2}
+  m_EffectFactor: 0.044
+  m_Width: 0.19
+  m_Rotation: 4
+  m_Softness: 1
+  m_Brightness: 0.736
+  m_Gloss: 0.873
+  m_EffectArea: 0
+  m_Player:
+    play: 1
+    initialPlayDelay: 0
+    duration: 1
+    loop: 1
+    loopDelay: 0
+    updateMode: 0
+  m_Play: 0
+  m_Loop: 0
+  m_Duration: 1
+  m_LoopDelay: 1
+  m_UpdateMode: 0
 --- !u!224 &504668214 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 600036497531314510, guid: f43dff93197d2fa4abbf9dfe91474d61, type: 3}
@@ -1111,9 +1163,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1812031938}
   - {fileID: 2607669769209777075}
   - {fileID: 504668214}
-  - {fileID: 1812031938}
   - {fileID: 1301667011}
   - {fileID: 459605137}
   - {fileID: 1936024691}
@@ -3009,6 +3061,10 @@ PrefabInstance:
       propertyPath: scenarioGenerator
       value: 
       objectReference: {fileID: 7611037470532706203}
+    - target: {fileID: 3283663113611314913, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
+      propertyPath: finalTilePosition.z
+      value: 320
+      objectReference: {fileID: 0}
     - target: {fileID: 4323801927022988961, guid: d46983d20ca2aa446ac7cdd78ed07f96, type: 3}
       propertyPath: m_Name
       value: NewPBHandler
@@ -4712,7 +4768,7 @@ MonoBehaviour:
     m_Bits: 64
   tileWith: 20
   defaultTilesCount: 10
-  totalTilesToSpawn: 11
+  totalTilesToSpawn: 16
   startPos: {x: 0, y: 0, z: 0}
   groundChecker: {fileID: 6766845062958037610}
   destroyer: {fileID: 1896897039903973578}

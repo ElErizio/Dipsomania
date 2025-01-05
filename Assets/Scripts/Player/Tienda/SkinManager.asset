@@ -18,10 +18,10 @@ MonoBehaviour:
     price: 0
   - skinImage: {fileID: 21300000, guid: 3b695c2b82a4f7446ac743daa5cf1755, type: 3}
     skinMaterial: {fileID: 2100000, guid: a5697dd2a258cf3408ccb9a3d9aad599, type: 2}
-    price: 10
+    price: 1000
   - skinImage: {fileID: 21300000, guid: 1144f790f60574b46aaa9b2bbb3b4f2d, type: 3}
     skinMaterial: {fileID: 2100000, guid: 506adc946b4cadd418cb864a0f8babba, type: 2}
-    price: 20
+    price: 1500
   - skinImage: {fileID: 21300000, guid: 593185d682577554fbb8b5869374a4fa, type: 3}
     skinMaterial: {fileID: 2100000, guid: a8f1d0af439c0574496312f66f5ac07e, type: 2}
-    price: 30
+    price: 777777
