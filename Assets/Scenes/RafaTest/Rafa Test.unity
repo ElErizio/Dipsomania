@@ -4712,7 +4712,7 @@ MonoBehaviour:
     m_Bits: 64
   tileWith: 20
   defaultTilesCount: 10
-  totalTilesToSpawn: 20
+  totalTilesToSpawn: 11
   startPos: {x: 0, y: 0, z: 0}
   groundChecker: {fileID: 6766845062958037610}
   destroyer: {fileID: 1896897039903973578}
