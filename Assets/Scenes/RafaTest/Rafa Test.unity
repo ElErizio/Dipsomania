@@ -1951,6 +1951,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3964793748545421553, guid: 579878ede5ddc8a4b9287acbe0c78d75, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964793748545421553, guid: 579878ede5ddc8a4b9287acbe0c78d75, type: 3}
       propertyPath: m_Volume
       value: 0.2
       objectReference: {fileID: 0}
@@ -3930,7 +3934,7 @@ Transform:
   m_GameObject: {fileID: 7125167380061335160}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4827,6 +4831,7 @@ MonoBehaviour:
   invulnerableLMName: Invulnerable
   invulnerableTime: 3
   totalDistance: 0
+  SkinnedMeshRenderer: {fileID: 2731223656486594547}
   victoryMenu: {fileID: 405263048}
   pauseButton: {fileID: 1812031933}
   lifeLeft: {fileID: 1679372353}

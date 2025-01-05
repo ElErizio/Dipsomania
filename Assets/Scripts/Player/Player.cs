@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     bool isInvulnerable;
     LayerMask defaultLM;
 
+    public SkinnedMeshRenderer SkinnedMeshRenderer;
+
     public GameObject victoryMenu;
     public GameObject pauseButton;
     public GameObject lifeLeft;
@@ -91,6 +93,7 @@ public class Player : MonoBehaviour
     {
         if (isOnPlay && other.CompareTag("WinTrigger"))
         {
+            GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
             WinGame();
         }
     }
@@ -123,7 +126,6 @@ public class Player : MonoBehaviour
     {
         Debug.Log("¡Ganaste!");
 
-        // Check if the current scene is the tutorial scene
         if (SceneManager.GetActiveScene().name == "Tutorial")
         {
             // Mark tutorial as completed in PlayerPrefs
@@ -132,8 +134,8 @@ public class Player : MonoBehaviour
             Debug.Log("Tutorial Completed!");
         }
 
-        ShowVictoryMenu();
         GameManager.GetInstance().ChangeGameState(GAME_STATE.PAUSE);
+        ShowVictoryMenu();
 
         PlayerPrefs.SetFloat("TotalDistance", totalDistance);
         PlayerPrefs.Save();
@@ -182,10 +184,9 @@ public class Player : MonoBehaviour
 
     IEnumerator InvulnerabilidadAnim()
     {
-        MeshRenderer mesh = GetComponent<MeshRenderer>();
-        mesh.enabled = false;
+        SkinnedMeshRenderer.enabled = false;
         yield return new WaitForSeconds(0.2f);
-        mesh.enabled = true;
+        SkinnedMeshRenderer.enabled = true;
         yield return new WaitForSeconds(0.2f);
         if (isInvulnerable)
         {
