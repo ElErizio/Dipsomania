@@ -3022,6 +3022,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284470348}
   m_CullTransparentMesh: 1
+--- !u!1 &1298645621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5811289488917385978, guid: dfa1de877ba51494aa77e8993d9110b4, type: 3}
+  m_PrefabInstance: {fileID: 2162932525330508463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1298645625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298645621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19b7e2285c104f6ca47d583f3e5444f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 300
+  m_EffectMaterial: {fileID: 2100000, guid: 9dc7e810a87b444ab96919f3215c2fe5, type: 2}
+  m_EffectFactor: 0.129
+  m_Width: 0.209
+  m_Rotation: 17
+  m_Softness: 1
+  m_Brightness: 1
+  m_Gloss: 1
+  m_EffectArea: 0
+  m_Player:
+    play: 1
+    initialPlayDelay: 0
+    duration: 1
+    loop: 1
+    loopDelay: 0
+    updateMode: 0
+  m_Play: 0
+  m_Loop: 0
+  m_Duration: 1
+  m_LoopDelay: 1
+  m_UpdateMode: 0
 --- !u!1 &1325119589
 GameObject:
   m_ObjectHideFlags: 0
@@ -5957,6 +5995,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 225773911}
+    - target: {fileID: 5161375881270070566, guid: dfa1de877ba51494aa77e8993d9110b4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dc7e810a87b444ab96919f3215c2fe5, type: 2}
     - target: {fileID: 5811289488917385978, guid: dfa1de877ba51494aa77e8993d9110b4, type: 3}
       propertyPath: m_Name
       value: Boton_Play
@@ -5964,7 +6006,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5811289488917385978, guid: dfa1de877ba51494aa77e8993d9110b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1298645625}
   m_SourcePrefab: {fileID: 100100000, guid: dfa1de877ba51494aa77e8993d9110b4, type: 3}
 --- !u!1 &2520449720593334806
 GameObject:
